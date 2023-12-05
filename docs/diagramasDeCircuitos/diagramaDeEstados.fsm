@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fsm>
+  <states>
+    <state>
+      <values></values>
+      <position x="240.0" y="360.0"/>
+      <number>0</number>
+      <name>verifica jogo</name>
+      <radius>100</radius>
+      <isInitial>true</isInitial>
+      <initialAngle>16</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values></values>
+      <position x="660.0" y="360.0"/>
+      <number>1</number>
+      <name>primeira entrada</name>
+      <radius>110</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values></values>
+      <position x="600.0" y="780.0"/>
+      <number>2</number>
+      <name>fim de jogo</name>
+      <radius>100</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values></values>
+      <position x="1440.0" y="300.0"/>
+      <number>3</number>
+      <name>comparar cartas</name>
+      <radius>100</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values></values>
+      <position x="780.0" y="600.0"/>
+      <number>4</number>
+      <name>desvirar</name>
+      <radius>70</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values></values>
+      <position x="720.0" y="60.0"/>
+      <number>5</number>
+      <name>manter virada</name>
+      <radius>100</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+    <state>
+      <values></values>
+      <position x="1020.0" y="360.0"/>
+      <number>6</number>
+      <name>segunda entrada</name>
+      <radius>110</radius>
+      <isInitial>false</isInitial>
+      <initialAngle>12</initialAngle>
+      <defaultDC>false</defaultDC>
+    </state>
+  </states>
+  <transitions>
+    <transition>
+      <values></values>
+      <position x="445.0" y="345.23236"/>
+      <fromState reference="../../../states/state"/>
+      <toState reference="../../../states/state[2]"/>
+      <condition></condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="355.73175" y="644.8432"/>
+      <fromState reference="../../../states/state"/>
+      <toState reference="../../../states/state[3]"/>
+      <condition></condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="1126.0304" y="89.342766"/>
+      <fromState reference="../../../states/state[4]"/>
+      <toState reference="../../../states/state[6]"/>
+      <condition>cartas iguais</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="1135.09" y="541.447"/>
+      <fromState reference="../../../states/state[4]"/>
+      <toState reference="../../../states/state[5]"/>
+      <condition>cartas diferentes</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="501.18335" y="536.7706"/>
+      <fromState reference="../../../states/state[5]"/>
+      <toState reference="../../../states/state"/>
+      <condition></condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="430.02478" y="130.03964"/>
+      <fromState reference="../../../states/state[6]"/>
+      <toState reference="../../../states/state"/>
+      <condition></condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="845.0" y="328.72556"/>
+      <fromState reference="../../../states/state[2]"/>
+      <toState reference="../../../states/state[7]"/>
+      <condition></condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="1236.2806" y="267.8987"/>
+      <fromState reference="../../../states/state[7]"/>
+      <toState reference="../../../states/state[4]"/>
+      <condition></condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="520.0" y="190.0"/>
+      <fromState reference="../../../states/state[2]"/>
+      <toState reference="../../../states/state[2]"/>
+      <condition>carta ja virada</condition>
+    </transition>
+    <transition>
+      <values></values>
+      <position x="915.0" y="163.0"/>
+      <fromState reference="../../../states/state[7]"/>
+      <toState reference="../../../states/state[7]"/>
+      <condition>carta ja virada</condition>
+    </transition>
+  </transitions>
+</fsm>
