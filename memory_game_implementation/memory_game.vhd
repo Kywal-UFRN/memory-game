@@ -6,6 +6,7 @@ ENTITY memory_game IS
 	port(
 		BTN_IN : in STD_LOGIC_VECTOR (2 DOWNTO 0);
 		CLK : in STD_LOGIC;
+		CLRN : in STD_LOGIC;
 		carta1 : out STD_LOGIC_VECTOR(6 downto 0);
 		carta2 : out STD_LOGIC_VECTOR(6 downto 0);
 		carta3 : out STD_LOGIC_VECTOR(6 downto 0);
