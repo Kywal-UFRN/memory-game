@@ -10,7 +10,7 @@ END memory_game;
 
 ARCHITECTURE arch_2 OF memory_game IS
 
-	component registrador8bits is
+	component registrador3bits is
         generic(W : NATURAL := 3);
         port (
             d : in STD_LOGIC_VECTOR(W-1 DOWNTO 0);
@@ -21,27 +21,18 @@ ARCHITECTURE arch_2 OF memory_game IS
         );
     end component;
 	 
-	 component registradorEstadoCarta is
-        port (
-            d : in STD_LOGIC;
-            clk : in STD_LOGIC;
-            q : out STD_LOGIC
-        );
-    end component;
-	 
 	 component tecladoNumerico is
         Port (
             CLK : in STD_LOGIC;
             BTN : in STD_LOGIC_VECTOR(3 downto 0);
-				ENA : in STD_LOGIC;
-            Destino : out STD_LOGIC_VECTOR(3 downto 0)
+				ENABLE : in STD_LOGIC;
+            OUTPUT : out STD_LOGIC_VECTOR(3 downto 0)
         );
     end component;
 	 
 	component display is
 		  GENERIC(W : NATURAL := 3);
         Port (
-            CLK : in STD_LOGIC;
             Data : in STD_LOGIC_VECTOR(W-1 downto 0);
             SegmentDisplay : out STD_LOGIC_VECTOR(6 downto 0)
         );

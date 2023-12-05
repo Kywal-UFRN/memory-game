@@ -2,15 +2,15 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
-ENTITY registrador8bits IS
+ENTITY registrador3bits IS
 GENERIC(W : NATURAL := 3);
 PORT (d : IN STD_LOGIC_VECTOR(W-1 DOWNTO 0);-- data input
 		clk : IN STD_LOGIC; -- clock
 		ena : IN STD_LOGIC; -- enable
 		q : OUT STD_LOGIC_VECTOR(W-1 DOWNTO 0));-- data output
-END registrador8bits;
+END registrador3bits;
 
-ARCHITECTURE arch_1 OF registrador8bits IS
+ARCHITECTURE arch_1 OF registrador3bits IS
 BEGIN
 PROCESS(clk,clrn)
 BEGIN

@@ -1,89 +1,72 @@
-Analysis & Elaboration report for memory_game
-Mon Dec  4 23:06:38 2023
-Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+Analysis & Synthesis report for memory_game
+Tue Dec 05 14:53:06 2023
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
 ---------------------
 ; Table of Contents ;
 ---------------------
   1. Legal Notice
-  2. Analysis & Elaboration Summary
-  3. Parallel Compilation
-  4. Analysis & Elaboration Settings
-  5. Analysis & Elaboration Messages
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2023  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and any partner logic 
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
-agreement, including, without limitation, that your use is for
-the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details, at
-https://fpgasoftware.intel.com/eula.
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------+
-; Analysis & Elaboration Summary                                                 ;
-+-------------------------------+------------------------------------------------+
-; Analysis & Elaboration Status ; Successful - Mon Dec  4 23:06:38 2023          ;
-; Quartus Prime Version         ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
-; Revision Name                 ; memory_game                                    ;
-; Top-level Entity Name         ; memory_game                                    ;
-; Family                        ; Cyclone V                                      ;
-; Logic utilization (in ALMs)   ; N/A until Partition Merge                      ;
-; Total registers               ; N/A until Partition Merge                      ;
-; Total pins                    ; N/A until Partition Merge                      ;
-; Total virtual pins            ; N/A until Partition Merge                      ;
-; Total block memory bits       ; N/A until Partition Merge                      ;
-; Total PLLs                    ; N/A until Partition Merge                      ;
-; Total DLLs                    ; N/A until Partition Merge                      ;
-+-------------------------------+------------------------------------------------+
-
-
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
++--------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                             ;
++-----------------------------+--------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Tue Dec 05 14:53:06 2023          ;
+; Quartus II 64-Bit Version   ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name               ; memory_game                                ;
+; Top-level Entity Name       ; memory_game                                ;
+; Family                      ; Cyclone V                                  ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                  ;
+; Total registers             ; N/A until Partition Merge                  ;
+; Total pins                  ; N/A until Partition Merge                  ;
+; Total virtual pins          ; N/A until Partition Merge                  ;
+; Total block memory bits     ; N/A until Partition Merge                  ;
+; Total PLLs                  ; N/A until Partition Merge                  ;
+; Total DLLs                  ; N/A until Partition Merge                  ;
++-----------------------------+--------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Elaboration Settings                                                                                           ;
+; Analysis & Synthesis Settings                                                                                             ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
 ; Top-level entity name                                                           ; memory_game        ; memory_game        ;
-; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Family name                                                                     ; Cyclone V          ; Cyclone IV GX      ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
 ; Enable compact report table                                                     ; Off                ; Off                ;
 ; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
 ; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
 ; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
 ; Preserve fewer node names                                                       ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
 ; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
 ; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                        ; Auto               ; Auto               ;
@@ -134,7 +117,7 @@ https://fpgasoftware.intel.com/eula.
 ; Report Connectivity Checks                                                      ; On                 ; On                 ;
 ; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
 ; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; PowerPlay Power Optimization                                                    ; Normal compilation ; Normal compilation ;
 ; HDL message level                                                               ; Level2             ; Level2             ;
 ; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
 ; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
@@ -150,49 +133,55 @@ https://fpgasoftware.intel.com/eula.
 ; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
 ; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
 ; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Synthesis Seed                                                                  ; 1                  ; 1                  ;
 ; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
-; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+---------------------------------+
-; Analysis & Elaboration Messages ;
-+---------------------------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Elaboration
-    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
-    Info: Processing started: Mon Dec  4 23:06:28 2023
-Info: Command: quartus_map --read_settings_files=on --write_settings_files=off memory_game -c memory_game --analysis_and_elaboration
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file registrador8bits.vhd
-    Info (12022): Found design unit 1: registrador8bits-arch_1 File: C:/Users/USER/Documents/circuitosLogicos/memory_game/registrador8bits.vhd Line: 14
-    Info (12023): Found entity 1: registrador8bits File: C:/Users/USER/Documents/circuitosLogicos/memory_game/registrador8bits.vhd Line: 5
-Info (12021): Found 2 design units, including 1 entities, in source file registradorestadocarta.vhd
-    Info (12022): Found design unit 1: registradorEstadoCarta-arch_1 File: C:/Users/USER/Documents/circuitosLogicos/memory_game/registradorEstadoCarta.vhd Line: 14
-    Info (12023): Found entity 1: registradorEstadoCarta File: C:/Users/USER/Documents/circuitosLogicos/memory_game/registradorEstadoCarta.vhd Line: 5
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Tue Dec 05 14:53:03 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off memory_game -c memory_game
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 2 design units, including 1 entities, in source file display.vhd
-    Info (12022): Found design unit 1: display-Behavioral File: C:/Users/USER/Documents/circuitosLogicos/memory_game/display.vhd Line: 13
-    Info (12023): Found entity 1: display File: C:/Users/USER/Documents/circuitosLogicos/memory_game/display.vhd Line: 4
+    Info (12022): Found design unit 1: display-Behavioral
+    Info (12023): Found entity 1: display
 Info (12021): Found 2 design units, including 1 entities, in source file tecladonumerico.vhd
-    Info (12022): Found design unit 1: tecladoNumerico-Behavioral File: C:/Users/USER/Documents/circuitosLogicos/memory_game/tecladoNumerico.vhd Line: 15
-    Info (12023): Found entity 1: tecladoNumerico File: C:/Users/USER/Documents/circuitosLogicos/memory_game/tecladoNumerico.vhd Line: 6
+    Info (12022): Found design unit 1: tecladoNumerico-Behavioral
+    Info (12023): Found entity 1: tecladoNumerico
 Info (12021): Found 2 design units, including 1 entities, in source file comparador.vhd
-    Info (12022): Found design unit 1: comparador-behavior File: C:/Users/USER/Documents/circuitosLogicos/memory_game/comparador.vhd Line: 13
-    Info (12023): Found entity 1: comparador File: C:/Users/USER/Documents/circuitosLogicos/memory_game/comparador.vhd Line: 5
+    Info (12022): Found design unit 1: comparador-behavior
+    Info (12023): Found entity 1: comparador
 Info (12021): Found 2 design units, including 1 entities, in source file contador.vhd
-    Info (12022): Found design unit 1: contador-arch_1 File: C:/Users/USER/Documents/circuitosLogicos/memory_game/contador.vhd Line: 17
-    Info (12023): Found entity 1: contador File: C:/Users/USER/Documents/circuitosLogicos/memory_game/contador.vhd Line: 5
+    Info (12022): Found design unit 1: contador-arch_1
+    Info (12023): Found entity 1: contador
 Info (12021): Found 2 design units, including 1 entities, in source file memory_game.vhd
-    Info (12022): Found design unit 1: memory_game-arch_2 File: C:/Users/USER/Documents/circuitosLogicos/memory_game/memory_game.vhd Line: 11
-    Info (12023): Found entity 1: memory_game File: C:/Users/USER/Documents/circuitosLogicos/memory_game/memory_game.vhd Line: 5
-Info (12127): Elaborating entity "memory_game" for the top level hierarchy
-Warning (10541): VHDL Signal Declaration warning at memory_game.vhd(7): used implicit default value for signal "a" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/USER/Documents/circuitosLogicos/memory_game/memory_game.vhd Line: 7
-Warning (10541): VHDL Signal Declaration warning at memory_game.vhd(7): used implicit default value for signal "b" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/USER/Documents/circuitosLogicos/memory_game/memory_game.vhd Line: 7
-Info: Quartus Prime Analysis & Elaboration was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4858 megabytes
-    Info: Processing ended: Mon Dec  4 23:06:38 2023
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:14
+    Info (12022): Found design unit 1: memory_game-arch_2
+    Info (12023): Found entity 1: memory_game
+Info (12021): Found 2 design units, including 1 entities, in source file registrador3bits.vhd
+    Info (12022): Found design unit 1: registrador3bits-arch_1
+    Info (12023): Found entity 1: registrador3bits
+Error (10482): VHDL error at registrador3bits.vhd(18): object "clrn" is used but not declared File: C:/Users/KIWAL/Desktop/Emanuel Kywal/Estudos e Acadêmicos/UFRN/4° Período - 2023.2/Circuitos Lógicos/LogicCircuits/memory-game/memory_game_implementation/registrador3bits.vhd Line: 18
+Error (10482): VHDL error at registrador3bits.vhd(16): object "clrn" is used but not declared File: C:/Users/KIWAL/Desktop/Emanuel Kywal/Estudos e Acadêmicos/UFRN/4° Período - 2023.2/Circuitos Lógicos/LogicCircuits/memory-game/memory_game_implementation/registrador3bits.vhd Line: 16
+Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
+    Error: Peak virtual memory: 4689 megabytes
+    Error: Processing ended: Tue Dec 05 14:53:06 2023
+    Error: Elapsed time: 00:00:03
+    Error: Total CPU time (on all processors): 00:00:03
 
 
