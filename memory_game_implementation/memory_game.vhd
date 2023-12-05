@@ -4,12 +4,20 @@ USE IEEE.std_logic_unsigned.ALL;
 
 ENTITY memory_game IS
 	port(
-		a,b : out std_logic
+		BTN_IN : in STD_LOGIC_VECTOR (2 DOWNTO 0);
+		CLK : in STD_LOGIC;
+		carta1 : out STD_LOGIC_VECTOR(6 downto 0);
+		carta2 : out STD_LOGIC_VECTOR(6 downto 0);
+		carta3 : out STD_LOGIC_VECTOR(6 downto 0);
+		carta4 : out STD_LOGIC_VECTOR(6 downto 0);
+		carta5 : out STD_LOGIC_VECTOR(6 downto 0);
+		carta6 : out STD_LOGIC_VECTOR(6 downto 0);
+		carta7 : out STD_LOGIC_VECTOR(6 downto 0);
+		carta8 : out STD_LOGIC_VECTOR(6 downto 0);
 	);
 END memory_game;
 
 ARCHITECTURE arch_2 OF memory_game IS
-
 	component registrador3bits is
         generic(W : NATURAL := 3);
         port (
@@ -27,14 +35,6 @@ ARCHITECTURE arch_2 OF memory_game IS
             BTN : in STD_LOGIC_VECTOR(3 downto 0);
 				ENABLE : in STD_LOGIC;
             OUTPUT : out STD_LOGIC_VECTOR(3 downto 0)
-        );
-    end component;
-	 
-	component display is
-		  GENERIC(W : NATURAL := 3);
-        Port (
-            Data : in STD_LOGIC_VECTOR(W-1 downto 0);
-            SegmentDisplay : out STD_LOGIC_VECTOR(6 downto 0)
         );
     end component;
 	 
@@ -59,156 +59,114 @@ ARCHITECTURE arch_2 OF memory_game IS
         );
     end component;
 	 
-	 -- Máquina de estados
-	 
-	 -- Conectar os componentes
+	 component carta is
+		port(
+			INPUT : in STD_LOGIC_VECTOR (2 DOWNTO 0);
+			DATA : in STD_LOGIC_VECTOR (2 DOWNTO 0);
+			CLK : in STD_LOGIC;
+			CLRN : in STD_LOGIC;
+			V_CARTA : out STD_LOGIC_VECTOR(6 downto 0)
+		);
+	  end component;
 	 
 BEGIN
-
-		carta1 : registrador3bits
+		d_carta1 : carta 
 		port map(
-			d => "100",
-         clk => CLK,
-			clrn => "1",
-			ena => "1",
-         q => 
+			INPUT => ,
+			DATA => "011",
+			CLK => CLK,
+			CLRN : "1",
+			V_CARTA : carta1
 		);
 		
-	 carta2 : registrador3bits
+		d_carta2 : carta 
 		port map(
-			d => "001",
-         clk => CLK,
-			clrn => "1",
-			ena => "1",
-         q => 
+			INPUT => ,
+			DATA => "001",
+			CLK => CLK,
+			CLRN : "1",
+			V_CARTA : carta2
 		);
 		
-		carta3 : registrador3bits
+		d_carta3 : carta 
 		port map(
-			d => "011",
-         clk => CLK,
-			clrn => "1",
-			ena => "1",
-         q => 
+			INPUT => ,
+			DATA => "100",
+			CLK => CLK,
+			CLRN : "1",
+			V_CARTA : carta3
 		);
 		
-		carta4 : registrador3bits
+		d_carta4 : carta 
 		port map(
-			d => "010",
-         clk => CLK,
-			clrn => "1",
-			ena => "1",
-         q => 
+			INPUT => ,
+			DATA => "100",
+			CLK => CLK,
+			CLRN : "1",
+			V_CARTA : carta4
 		);
 		
-		carta5 : registrador3bits
+		d_carta5 : carta 
 		port map(
-			d => "010",
-         clk => CLK,
-			clrn => "1",
-			ena => "1",
-         q => 
+			INPUT => ,
+			DATA => "011",
+			CLK => CLK,
+			CLRN : "1",
+			V_CARTA : carta5
 		);
 		
-		carta6 : registrador3bits
+		d_carta6 : carta 
 		port map(
-			d => "100",
-         clk => CLK,
-			clrn => "1",
-			ena => "1",
-         q => 
+			INPUT => ,
+			DATA => "001",
+			CLK => CLK,
+			CLRN : "1",
+			V_CARTA : carta6
 		);
 		
-		carta7 : registrador3bits
+		d_carta7 : carta 
 		port map(
-			d => "001",
-         clk => CLK,
-			clrn => "1",
-			ena => "1",
-         q => 
+			INPUT => ,
+			DATA => "010",
+			CLK => CLK,
+			CLRN : "1",
+			V_CARTA : carta7
 		);
 		
-		carta8 : registrador3bits
+		d_carta8 : carta 
 		port map(
-			d => "011",
-         clk => CLK,
-			clrn => "1",
-			ena => "1",
-         q => 
+			INPUT => ,
+			DATA => "010",
+			CLK => CLK,
+			CLRN : "1",
+			V_CARTA : carta8
 		);
 		
-		estadoCarta1 : registrador3bits
-		port map(
-			d => ,
-         clk => CLK,
-			clrn => "1",
-			ena => "1",
-         q => 
-		);
+		teclado : tecladoNumerico
+		port map (
+            CLK => CLK,
+            BTN => BTN_IN,
+				ENABLE => ,
+            OUTPUT => 
+      );
 		
-		estadoCarta2 : registrador3bits
-		port map(
-			d => ,
-         clk => CLK,
-			clrn => "1",
-			ena => "1",
-         q => 
-		);
+		comparador : comparador
+		port map (
+			a => ,
+			b => ,
+			eq => ,
+			gt => ,
+			lt => 
+	   );
 		
-		estadoCarta3 : registrador3bits
+		contadorCartasViradas : registrador3bits
 		port map(
-			d => ,
-         clk => CLK,
-			clrn => "1",
-			ena => "1",
-         q => 
-		);
-		
-		estadoCarta4 : registrador3bits
-		port map(
-			d => ,
-         clk => CLK,
-			clrn => "1",
-			ena => "1",
-         q => 
-		);
-		
-		estadoCarta5 : registrador3bits
-		port map(
-			d => ,
-         clk => CLK,
-			clrn => "1",
-			ena => "1",
-         q => 
-		);
-		
-		estadoCarta6 : registrador3bits
-		port map(
-			d => ,
-         clk => CLK,
-			clrn => "1",
-			ena => "1",
-         q => 
-		);
-		
-		estadoCarta7 : registrador3bits
-		port map(
-			d => ,
-         clk => CLK,
-			clrn => "1",
-			ena => "1",
-         q => 
-		);
-		
-		estadoCarta8 : registrador3bits
-		port map(
-			d => ,
-         clk => CLK,
-			clrn => "1",
-			ena => "1",
-         q => 
-		);
-		
+            d => ,
+            clk => ,
+            clrn => , 
+            ena => 
+            q : 
+       );
 
 
 END arch_2;
