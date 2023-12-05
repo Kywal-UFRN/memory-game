@@ -65,13 +65,150 @@ ARCHITECTURE arch_2 OF memory_game IS
 	 
 BEGIN
 
-	carta1 : registrador8bits
+		carta1 : registrador3bits
 		port map(
-			d => "",
+			d => "100",
          clk => CLK,
+			clrn => "1",
 			ena => "1",
          q => 
 		);
+		
+	 carta2 : registrador3bits
+		port map(
+			d => "001",
+         clk => CLK,
+			clrn => "1",
+			ena => "1",
+         q => 
+		);
+		
+		carta3 : registrador3bits
+		port map(
+			d => "011",
+         clk => CLK,
+			clrn => "1",
+			ena => "1",
+         q => 
+		);
+		
+		carta4 : registrador3bits
+		port map(
+			d => "010",
+         clk => CLK,
+			clrn => "1",
+			ena => "1",
+         q => 
+		);
+		
+		carta5 : registrador3bits
+		port map(
+			d => "010",
+         clk => CLK,
+			clrn => "1",
+			ena => "1",
+         q => 
+		);
+		
+		carta6 : registrador3bits
+		port map(
+			d => "100",
+         clk => CLK,
+			clrn => "1",
+			ena => "1",
+         q => 
+		);
+		
+		carta7 : registrador3bits
+		port map(
+			d => "001",
+         clk => CLK,
+			clrn => "1",
+			ena => "1",
+         q => 
+		);
+		
+		carta8 : registrador3bits
+		port map(
+			d => "011",
+         clk => CLK,
+			clrn => "1",
+			ena => "1",
+         q => 
+		);
+		
+		estadoCarta1 : registrador3bits
+		port map(
+			d => ,
+         clk => CLK,
+			clrn => "1",
+			ena => "1",
+         q => 
+		);
+		
+		estadoCarta2 : registrador3bits
+		port map(
+			d => ,
+         clk => CLK,
+			clrn => "1",
+			ena => "1",
+         q => 
+		);
+		
+		estadoCarta3 : registrador3bits
+		port map(
+			d => ,
+         clk => CLK,
+			clrn => "1",
+			ena => "1",
+         q => 
+		);
+		
+		estadoCarta4 : registrador3bits
+		port map(
+			d => ,
+         clk => CLK,
+			clrn => "1",
+			ena => "1",
+         q => 
+		);
+		
+		estadoCarta5 : registrador3bits
+		port map(
+			d => ,
+         clk => CLK,
+			clrn => "1",
+			ena => "1",
+         q => 
+		);
+		
+		estadoCarta6 : registrador3bits
+		port map(
+			d => ,
+         clk => CLK,
+			clrn => "1",
+			ena => "1",
+         q => 
+		);
+		
+		estadoCarta7 : registrador3bits
+		port map(
+			d => ,
+         clk => CLK,
+			clrn => "1",
+			ena => "1",
+         q => 
+		);
+		
+		estadoCarta8 : registrador3bits
+		port map(
+			d => ,
+         clk => CLK,
+			clrn => "1",
+			ena => "1",
+         q => 
+		);
+		
 
 
 END arch_2;
