@@ -1,0 +1,1195 @@
+$comment
+	File created using the following command:
+		vcd file memory_game.msim.vcd -direction
+$end
+$date
+	Wed Dec 06 09:32:34 2023
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module memory_game_vhd_vec_tst $end
+$var wire 1 ! BTN_IN [2] $end
+$var wire 1 " BTN_IN [1] $end
+$var wire 1 # BTN_IN [0] $end
+$var wire 1 $ carta1 [6] $end
+$var wire 1 % carta1 [5] $end
+$var wire 1 & carta1 [4] $end
+$var wire 1 ' carta1 [3] $end
+$var wire 1 ( carta1 [2] $end
+$var wire 1 ) carta1 [1] $end
+$var wire 1 * carta1 [0] $end
+$var wire 1 + carta2 [6] $end
+$var wire 1 , carta2 [5] $end
+$var wire 1 - carta2 [4] $end
+$var wire 1 . carta2 [3] $end
+$var wire 1 / carta2 [2] $end
+$var wire 1 0 carta2 [1] $end
+$var wire 1 1 carta2 [0] $end
+$var wire 1 2 carta3 [6] $end
+$var wire 1 3 carta3 [5] $end
+$var wire 1 4 carta3 [4] $end
+$var wire 1 5 carta3 [3] $end
+$var wire 1 6 carta3 [2] $end
+$var wire 1 7 carta3 [1] $end
+$var wire 1 8 carta3 [0] $end
+$var wire 1 9 carta4 [6] $end
+$var wire 1 : carta4 [5] $end
+$var wire 1 ; carta4 [4] $end
+$var wire 1 < carta4 [3] $end
+$var wire 1 = carta4 [2] $end
+$var wire 1 > carta4 [1] $end
+$var wire 1 ? carta4 [0] $end
+$var wire 1 @ carta5 [6] $end
+$var wire 1 A carta5 [5] $end
+$var wire 1 B carta5 [4] $end
+$var wire 1 C carta5 [3] $end
+$var wire 1 D carta5 [2] $end
+$var wire 1 E carta5 [1] $end
+$var wire 1 F carta5 [0] $end
+$var wire 1 G carta6 [6] $end
+$var wire 1 H carta6 [5] $end
+$var wire 1 I carta6 [4] $end
+$var wire 1 J carta6 [3] $end
+$var wire 1 K carta6 [2] $end
+$var wire 1 L carta6 [1] $end
+$var wire 1 M carta6 [0] $end
+$var wire 1 N carta7 [6] $end
+$var wire 1 O carta7 [5] $end
+$var wire 1 P carta7 [4] $end
+$var wire 1 Q carta7 [3] $end
+$var wire 1 R carta7 [2] $end
+$var wire 1 S carta7 [1] $end
+$var wire 1 T carta7 [0] $end
+$var wire 1 U carta8 [6] $end
+$var wire 1 V carta8 [5] $end
+$var wire 1 W carta8 [4] $end
+$var wire 1 X carta8 [3] $end
+$var wire 1 Y carta8 [2] $end
+$var wire 1 Z carta8 [1] $end
+$var wire 1 [ carta8 [0] $end
+$var wire 1 \ CLK $end
+$var wire 1 ] CLRN $end
+
+$scope module i1 $end
+$var wire 1 ^ gnd $end
+$var wire 1 _ vcc $end
+$var wire 1 ` unknown $end
+$var wire 1 a devoe $end
+$var wire 1 b devclrn $end
+$var wire 1 c devpor $end
+$var wire 1 d ww_devoe $end
+$var wire 1 e ww_devclrn $end
+$var wire 1 f ww_devpor $end
+$var wire 1 g ww_BTN_IN [2] $end
+$var wire 1 h ww_BTN_IN [1] $end
+$var wire 1 i ww_BTN_IN [0] $end
+$var wire 1 j ww_CLK $end
+$var wire 1 k ww_CLRN $end
+$var wire 1 l ww_carta1 [6] $end
+$var wire 1 m ww_carta1 [5] $end
+$var wire 1 n ww_carta1 [4] $end
+$var wire 1 o ww_carta1 [3] $end
+$var wire 1 p ww_carta1 [2] $end
+$var wire 1 q ww_carta1 [1] $end
+$var wire 1 r ww_carta1 [0] $end
+$var wire 1 s ww_carta2 [6] $end
+$var wire 1 t ww_carta2 [5] $end
+$var wire 1 u ww_carta2 [4] $end
+$var wire 1 v ww_carta2 [3] $end
+$var wire 1 w ww_carta2 [2] $end
+$var wire 1 x ww_carta2 [1] $end
+$var wire 1 y ww_carta2 [0] $end
+$var wire 1 z ww_carta3 [6] $end
+$var wire 1 { ww_carta3 [5] $end
+$var wire 1 | ww_carta3 [4] $end
+$var wire 1 } ww_carta3 [3] $end
+$var wire 1 ~ ww_carta3 [2] $end
+$var wire 1 !! ww_carta3 [1] $end
+$var wire 1 "! ww_carta3 [0] $end
+$var wire 1 #! ww_carta4 [6] $end
+$var wire 1 $! ww_carta4 [5] $end
+$var wire 1 %! ww_carta4 [4] $end
+$var wire 1 &! ww_carta4 [3] $end
+$var wire 1 '! ww_carta4 [2] $end
+$var wire 1 (! ww_carta4 [1] $end
+$var wire 1 )! ww_carta4 [0] $end
+$var wire 1 *! ww_carta5 [6] $end
+$var wire 1 +! ww_carta5 [5] $end
+$var wire 1 ,! ww_carta5 [4] $end
+$var wire 1 -! ww_carta5 [3] $end
+$var wire 1 .! ww_carta5 [2] $end
+$var wire 1 /! ww_carta5 [1] $end
+$var wire 1 0! ww_carta5 [0] $end
+$var wire 1 1! ww_carta6 [6] $end
+$var wire 1 2! ww_carta6 [5] $end
+$var wire 1 3! ww_carta6 [4] $end
+$var wire 1 4! ww_carta6 [3] $end
+$var wire 1 5! ww_carta6 [2] $end
+$var wire 1 6! ww_carta6 [1] $end
+$var wire 1 7! ww_carta6 [0] $end
+$var wire 1 8! ww_carta7 [6] $end
+$var wire 1 9! ww_carta7 [5] $end
+$var wire 1 :! ww_carta7 [4] $end
+$var wire 1 ;! ww_carta7 [3] $end
+$var wire 1 <! ww_carta7 [2] $end
+$var wire 1 =! ww_carta7 [1] $end
+$var wire 1 >! ww_carta7 [0] $end
+$var wire 1 ?! ww_carta8 [6] $end
+$var wire 1 @! ww_carta8 [5] $end
+$var wire 1 A! ww_carta8 [4] $end
+$var wire 1 B! ww_carta8 [3] $end
+$var wire 1 C! ww_carta8 [2] $end
+$var wire 1 D! ww_carta8 [1] $end
+$var wire 1 E! ww_carta8 [0] $end
+$var wire 1 F! \carta1[0]~output_o\ $end
+$var wire 1 G! \carta1[1]~output_o\ $end
+$var wire 1 H! \carta1[2]~output_o\ $end
+$var wire 1 I! \carta1[3]~output_o\ $end
+$var wire 1 J! \carta1[4]~output_o\ $end
+$var wire 1 K! \carta1[5]~output_o\ $end
+$var wire 1 L! \carta1[6]~output_o\ $end
+$var wire 1 M! \carta2[0]~output_o\ $end
+$var wire 1 N! \carta2[1]~output_o\ $end
+$var wire 1 O! \carta2[2]~output_o\ $end
+$var wire 1 P! \carta2[3]~output_o\ $end
+$var wire 1 Q! \carta2[4]~output_o\ $end
+$var wire 1 R! \carta2[5]~output_o\ $end
+$var wire 1 S! \carta2[6]~output_o\ $end
+$var wire 1 T! \carta3[0]~output_o\ $end
+$var wire 1 U! \carta3[1]~output_o\ $end
+$var wire 1 V! \carta3[2]~output_o\ $end
+$var wire 1 W! \carta3[3]~output_o\ $end
+$var wire 1 X! \carta3[4]~output_o\ $end
+$var wire 1 Y! \carta3[5]~output_o\ $end
+$var wire 1 Z! \carta3[6]~output_o\ $end
+$var wire 1 [! \carta4[0]~output_o\ $end
+$var wire 1 \! \carta4[1]~output_o\ $end
+$var wire 1 ]! \carta4[2]~output_o\ $end
+$var wire 1 ^! \carta4[3]~output_o\ $end
+$var wire 1 _! \carta4[4]~output_o\ $end
+$var wire 1 `! \carta4[5]~output_o\ $end
+$var wire 1 a! \carta4[6]~output_o\ $end
+$var wire 1 b! \carta5[0]~output_o\ $end
+$var wire 1 c! \carta5[1]~output_o\ $end
+$var wire 1 d! \carta5[2]~output_o\ $end
+$var wire 1 e! \carta5[3]~output_o\ $end
+$var wire 1 f! \carta5[4]~output_o\ $end
+$var wire 1 g! \carta5[5]~output_o\ $end
+$var wire 1 h! \carta5[6]~output_o\ $end
+$var wire 1 i! \carta6[0]~output_o\ $end
+$var wire 1 j! \carta6[1]~output_o\ $end
+$var wire 1 k! \carta6[2]~output_o\ $end
+$var wire 1 l! \carta6[3]~output_o\ $end
+$var wire 1 m! \carta6[4]~output_o\ $end
+$var wire 1 n! \carta6[5]~output_o\ $end
+$var wire 1 o! \carta6[6]~output_o\ $end
+$var wire 1 p! \carta7[0]~output_o\ $end
+$var wire 1 q! \carta7[1]~output_o\ $end
+$var wire 1 r! \carta7[2]~output_o\ $end
+$var wire 1 s! \carta7[3]~output_o\ $end
+$var wire 1 t! \carta7[4]~output_o\ $end
+$var wire 1 u! \carta7[5]~output_o\ $end
+$var wire 1 v! \carta7[6]~output_o\ $end
+$var wire 1 w! \carta8[0]~output_o\ $end
+$var wire 1 x! \carta8[1]~output_o\ $end
+$var wire 1 y! \carta8[2]~output_o\ $end
+$var wire 1 z! \carta8[3]~output_o\ $end
+$var wire 1 {! \carta8[4]~output_o\ $end
+$var wire 1 |! \carta8[5]~output_o\ $end
+$var wire 1 }! \carta8[6]~output_o\ $end
+$var wire 1 ~! \CLK~input_o\ $end
+$var wire 1 !" \BTN_IN[0]~input_o\ $end
+$var wire 1 "" \CLRN~input_o\ $end
+$var wire 1 #" \maquinaEstadoss|state_reg.s0~q\ $end
+$var wire 1 $" \maquinaEstadoss|Selector30~0_combout\ $end
+$var wire 1 %" \maquinaEstadoss|Selector33~0_combout\ $end
+$var wire 1 &" \BTN_IN[2]~input_o\ $end
+$var wire 1 '" \BTN_IN[1]~input_o\ $end
+$var wire 1 (" \maquinaEstadoss|Selector30~1_combout\ $end
+$var wire 1 )" \maquinaEstadoss|Equal5~0_combout\ $end
+$var wire 1 *" \maquinaEstadoss|Selector28~0_combout\ $end
+$var wire 1 +" \maquinaEstadoss|Selector4~0_combout\ $end
+$var wire 1 ," \maquinaEstadoss|Selector35~0_combout\ $end
+$var wire 1 -" \maquinaEstadoss|Selector29~0_combout\ $end
+$var wire 1 ." \maquinaEstadoss|Equal1~0_combout\ $end
+$var wire 1 /" \maquinaEstadoss|Selector33~1_combout\ $end
+$var wire 1 0" \maquinaEstadoss|Selector35~1_combout\ $end
+$var wire 1 1" \maquinaEstadoss|Selector27~0_combout\ $end
+$var wire 1 2" \maquinaEstadoss|Mux1~4_combout\ $end
+$var wire 1 3" \maquinaEstadoss|Selector31~0_combout\ $end
+$var wire 1 4" \maquinaEstadoss|Mux1~0_combout\ $end
+$var wire 1 5" \maquinaEstadoss|Selector50~0_combout\ $end
+$var wire 1 6" \maquinaEstadoss|next_state.s1_1479~combout\ $end
+$var wire 1 7" \maquinaEstadoss|state_reg.s1~q\ $end
+$var wire 1 8" \maquinaEstadoss|Selector48~0_combout\ $end
+$var wire 1 9" \maquinaEstadoss|next_state.s2_1468~combout\ $end
+$var wire 1 :" \maquinaEstadoss|state_reg.s2~q\ $end
+$var wire 1 ;" \maquinaEstadoss|Selector46~0_combout\ $end
+$var wire 1 <" \maquinaEstadoss|next_state.s3_1457~combout\ $end
+$var wire 1 =" \maquinaEstadoss|state_reg.s3~q\ $end
+$var wire 1 >" \maquinaEstadoss|next_state.s4_1446~combout\ $end
+$var wire 1 ?" \maquinaEstadoss|state_reg.s4~q\ $end
+$var wire 1 @" \maquinaEstadoss|Selector3~0_combout\ $end
+$var wire 1 A" \maquinaEstadoss|Selector38~0_combout\ $end
+$var wire 1 B" \maquinaEstadoss|Selector38~1_combout\ $end
+$var wire 1 C" \d_carta1|disp_carta|Mux4~0_combout\ $end
+$var wire 1 D" \d_carta5|disp_carta|Mux4~0_combout\ $end
+$var wire 1 E" \d_carta8|estadoCarta|q\ [2] $end
+$var wire 1 F" \d_carta8|estadoCarta|q\ [1] $end
+$var wire 1 G" \d_carta8|estadoCarta|q\ [0] $end
+$var wire 1 H" \d_carta1|estadoCarta|q\ [2] $end
+$var wire 1 I" \d_carta1|estadoCarta|q\ [1] $end
+$var wire 1 J" \d_carta1|estadoCarta|q\ [0] $end
+$var wire 1 K" \d_carta2|estadoCarta|q\ [2] $end
+$var wire 1 L" \d_carta2|estadoCarta|q\ [1] $end
+$var wire 1 M" \d_carta2|estadoCarta|q\ [0] $end
+$var wire 1 N" \teclado|Reg|q\ [2] $end
+$var wire 1 O" \teclado|Reg|q\ [1] $end
+$var wire 1 P" \teclado|Reg|q\ [0] $end
+$var wire 1 Q" \d_carta6|estadoCarta|q\ [2] $end
+$var wire 1 R" \d_carta6|estadoCarta|q\ [1] $end
+$var wire 1 S" \d_carta6|estadoCarta|q\ [0] $end
+$var wire 1 T" \d_carta3|estadoCarta|q\ [2] $end
+$var wire 1 U" \d_carta3|estadoCarta|q\ [1] $end
+$var wire 1 V" \d_carta3|estadoCarta|q\ [0] $end
+$var wire 1 W" \d_carta7|estadoCarta|q\ [2] $end
+$var wire 1 X" \d_carta7|estadoCarta|q\ [1] $end
+$var wire 1 Y" \d_carta7|estadoCarta|q\ [0] $end
+$var wire 1 Z" \d_carta4|estadoCarta|q\ [2] $end
+$var wire 1 [" \d_carta4|estadoCarta|q\ [1] $end
+$var wire 1 \" \d_carta4|estadoCarta|q\ [0] $end
+$var wire 1 ]" \d_carta5|estadoCarta|q\ [2] $end
+$var wire 1 ^" \d_carta5|estadoCarta|q\ [1] $end
+$var wire 1 _" \d_carta5|estadoCarta|q\ [0] $end
+$var wire 1 `" \maquinaEstadoss|enableCard_1\ [2] $end
+$var wire 1 a" \maquinaEstadoss|enableCard_1\ [1] $end
+$var wire 1 b" \maquinaEstadoss|enableCard_1\ [0] $end
+$var wire 1 c" \maquinaEstadoss|enableCard_2\ [2] $end
+$var wire 1 d" \maquinaEstadoss|enableCard_2\ [1] $end
+$var wire 1 e" \maquinaEstadoss|enableCard_2\ [0] $end
+$var wire 1 f" \maquinaEstadoss|enableCard_3\ [2] $end
+$var wire 1 g" \maquinaEstadoss|enableCard_3\ [1] $end
+$var wire 1 h" \maquinaEstadoss|enableCard_3\ [0] $end
+$var wire 1 i" \maquinaEstadoss|enableCard_4\ [2] $end
+$var wire 1 j" \maquinaEstadoss|enableCard_4\ [1] $end
+$var wire 1 k" \maquinaEstadoss|enableCard_4\ [0] $end
+$var wire 1 l" \maquinaEstadoss|enableCard_5\ [2] $end
+$var wire 1 m" \maquinaEstadoss|enableCard_5\ [1] $end
+$var wire 1 n" \maquinaEstadoss|enableCard_5\ [0] $end
+$var wire 1 o" \maquinaEstadoss|enableCard_6\ [2] $end
+$var wire 1 p" \maquinaEstadoss|enableCard_6\ [1] $end
+$var wire 1 q" \maquinaEstadoss|enableCard_6\ [0] $end
+$var wire 1 r" \maquinaEstadoss|enableCard_7\ [2] $end
+$var wire 1 s" \maquinaEstadoss|enableCard_7\ [1] $end
+$var wire 1 t" \maquinaEstadoss|enableCard_7\ [0] $end
+$var wire 1 u" \maquinaEstadoss|enableCard_8\ [2] $end
+$var wire 1 v" \maquinaEstadoss|enableCard_8\ [1] $end
+$var wire 1 w" \maquinaEstadoss|enableCard_8\ [0] $end
+$var wire 1 x" \maquinaEstadoss|ALT_INV_next_state.s3_1457~combout\ $end
+$var wire 1 y" \maquinaEstadoss|ALT_INV_next_state.s2_1468~combout\ $end
+$var wire 1 z" \maquinaEstadoss|ALT_INV_next_state.s1_1479~combout\ $end
+$var wire 1 {" \maquinaEstadoss|ALT_INV_next_state.s4_1446~combout\ $end
+$var wire 1 |" \maquinaEstadoss|ALT_INV_enableCard_8\ [1] $end
+$var wire 1 }" \maquinaEstadoss|ALT_INV_enableCard_7\ [1] $end
+$var wire 1 ~" \maquinaEstadoss|ALT_INV_enableCard_6\ [0] $end
+$var wire 1 !# \maquinaEstadoss|ALT_INV_enableCard_5\ [1] $end
+$var wire 1 "# \maquinaEstadoss|ALT_INV_enableCard_4\ [2] $end
+$var wire 1 ## \maquinaEstadoss|ALT_INV_enableCard_3\ [2] $end
+$var wire 1 $# \maquinaEstadoss|ALT_INV_enableCard_2\ [0] $end
+$var wire 1 %# \maquinaEstadoss|ALT_INV_enableCard_1\ [1] $end
+$var wire 1 &# \maquinaEstadoss|ALT_INV_Equal1~0_combout\ $end
+$var wire 1 '# \maquinaEstadoss|ALT_INV_Selector46~0_combout\ $end
+$var wire 1 (# \maquinaEstadoss|ALT_INV_Equal5~0_combout\ $end
+$var wire 1 )# \maquinaEstadoss|ALT_INV_Selector48~0_combout\ $end
+$var wire 1 *# \maquinaEstadoss|ALT_INV_Selector50~0_combout\ $end
+$var wire 1 +# \maquinaEstadoss|ALT_INV_state_reg.s0~q\ $end
+$var wire 1 ,# \maquinaEstadoss|ALT_INV_state_reg.s3~q\ $end
+$var wire 1 -# \maquinaEstadoss|ALT_INV_Selector27~0_combout\ $end
+$var wire 1 .# \maquinaEstadoss|ALT_INV_Selector28~0_combout\ $end
+$var wire 1 /# \maquinaEstadoss|ALT_INV_Selector29~0_combout\ $end
+$var wire 1 0# \maquinaEstadoss|ALT_INV_Selector30~1_combout\ $end
+$var wire 1 1# \maquinaEstadoss|ALT_INV_Selector31~0_combout\ $end
+$var wire 1 2# \maquinaEstadoss|ALT_INV_Selector33~1_combout\ $end
+$var wire 1 3# \maquinaEstadoss|ALT_INV_Selector35~1_combout\ $end
+$var wire 1 4# \maquinaEstadoss|ALT_INV_Selector35~0_combout\ $end
+$var wire 1 5# \maquinaEstadoss|ALT_INV_Selector4~0_combout\ $end
+$var wire 1 6# \maquinaEstadoss|ALT_INV_Selector38~1_combout\ $end
+$var wire 1 7# \teclado|Reg|ALT_INV_q\ [2] $end
+$var wire 1 8# \teclado|Reg|ALT_INV_q\ [1] $end
+$var wire 1 9# \teclado|Reg|ALT_INV_q\ [0] $end
+$var wire 1 :# \maquinaEstadoss|ALT_INV_Selector33~0_combout\ $end
+$var wire 1 ;# \maquinaEstadoss|ALT_INV_state_reg.s2~q\ $end
+$var wire 1 <# \maquinaEstadoss|ALT_INV_state_reg.s1~q\ $end
+$var wire 1 =# \maquinaEstadoss|ALT_INV_Selector3~0_combout\ $end
+$var wire 1 ># \maquinaEstadoss|ALT_INV_state_reg.s4~q\ $end
+$var wire 1 ?# \d_carta8|estadoCarta|ALT_INV_q\ [1] $end
+$var wire 1 @# \d_carta7|estadoCarta|ALT_INV_q\ [1] $end
+$var wire 1 A# \d_carta6|estadoCarta|ALT_INV_q\ [0] $end
+$var wire 1 B# \maquinaEstadoss|ALT_INV_Selector30~0_combout\ $end
+$var wire 1 C# \d_carta5|estadoCarta|ALT_INV_q\ [1] $end
+$var wire 1 D# \d_carta5|estadoCarta|ALT_INV_q\ [0] $end
+$var wire 1 E# \d_carta4|estadoCarta|ALT_INV_q\ [2] $end
+$var wire 1 F# \d_carta3|estadoCarta|ALT_INV_q\ [2] $end
+$var wire 1 G# \d_carta2|estadoCarta|ALT_INV_q\ [0] $end
+$var wire 1 H# \maquinaEstadoss|ALT_INV_Selector38~0_combout\ $end
+$var wire 1 I# \d_carta1|estadoCarta|ALT_INV_q\ [1] $end
+$var wire 1 J# \d_carta1|estadoCarta|ALT_INV_q\ [0] $end
+$var wire 1 K# \maquinaEstadoss|ALT_INV_Mux1~4_combout\ $end
+$var wire 1 L# \maquinaEstadoss|ALT_INV_Mux1~0_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0\
+0]
+0^
+1_
+x`
+1a
+1b
+1c
+1d
+1e
+1f
+0j
+0k
+0F!
+0G!
+0H!
+0I!
+0J!
+0K!
+0L!
+0M!
+0N!
+0O!
+0P!
+0Q!
+0R!
+0S!
+0T!
+0U!
+0V!
+0W!
+0X!
+0Y!
+0Z!
+0[!
+0\!
+0]!
+0^!
+0_!
+0`!
+0a!
+0b!
+0c!
+0d!
+0e!
+0f!
+0g!
+0h!
+0i!
+0j!
+0k!
+0l!
+0m!
+0n!
+0o!
+0p!
+0q!
+0r!
+0s!
+0t!
+0u!
+0v!
+0w!
+0x!
+0y!
+0z!
+0{!
+0|!
+0}!
+0~!
+0!"
+0""
+0#"
+1$"
+0%"
+0&"
+0'"
+0("
+0)"
+0*"
+0+"
+0,"
+0-"
+0."
+0/"
+00"
+01"
+02"
+03"
+04"
+15"
+16"
+07"
+08"
+09"
+0:"
+0;"
+0<"
+0="
+0>"
+0?"
+0@"
+1A"
+0B"
+0C"
+0D"
+1x"
+1y"
+0z"
+1{"
+1&#
+1'#
+1(#
+1)#
+0*#
+1+#
+1,#
+1-#
+1.#
+1/#
+10#
+11#
+12#
+13#
+14#
+15#
+16#
+1:#
+1;#
+1<#
+1=#
+1>#
+0B#
+0H#
+1K#
+1L#
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+0+
+0,
+0-
+0.
+0/
+00
+01
+02
+03
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+0Y
+0Z
+0[
+0g
+0h
+0i
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+0#!
+0$!
+0%!
+0&!
+0'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+0.!
+0/!
+00!
+01!
+02!
+03!
+04!
+05!
+06!
+07!
+08!
+09!
+0:!
+0;!
+0<!
+0=!
+0>!
+0?!
+0@!
+0A!
+0B!
+0C!
+0D!
+0E!
+xE"
+0F"
+xG"
+xH"
+0I"
+0J"
+xK"
+xL"
+0M"
+0N"
+0O"
+0P"
+xQ"
+xR"
+0S"
+0T"
+xU"
+xV"
+xW"
+0X"
+xY"
+0Z"
+x["
+x\"
+x]"
+0^"
+0_"
+x`"
+xa"
+xb"
+xc"
+xd"
+xe"
+xf"
+xg"
+xh"
+xi"
+xj"
+xk"
+xl"
+xm"
+xn"
+xo"
+xp"
+xq"
+xr"
+xs"
+xt"
+xu"
+xv"
+xw"
+x|"
+x}"
+x~"
+x!#
+x"#
+x##
+x$#
+x%#
+17#
+18#
+19#
+1?#
+1@#
+1A#
+1C#
+1D#
+1E#
+1F#
+1G#
+1I#
+1J#
+$end
+#10000
+1]
+1k
+1""
+#15000
+1\
+1j
+1~!
+1#"
+x_"
+x^"
+xX"
+xS"
+xJ"
+xT"
+xM"
+xF"
+xZ"
+17"
+xI"
+xI#
+0<#
+xE#
+x?#
+xG#
+xF#
+xJ#
+xA#
+x@#
+xC#
+xD#
+0+#
+x$"
+x)"
+xD"
+1,"
+05"
+18"
+x."
+xA"
+xC"
+x2"
+xH#
+x&#
+0)#
+1*#
+04#
+x(#
+xB#
+xF!
+xI!
+xL!
+x[!
+x\!
+x_!
+x`!
+xw!
+xy!
+xz!
+x|!
+x}!
+xQ!
+xR!
+xT!
+xU!
+xX!
+xY!
+xJ!
+xm!
+xn!
+xp!
+xr!
+xs!
+xu!
+xv!
+xb!
+xe!
+xh!
+xf!
+xK#
+x1"
+06"
+19"
+xr
+xo
+xl
+x)!
+x(!
+x%!
+x$!
+xE!
+xC!
+xB!
+x@!
+x?!
+xu
+xt
+x"!
+x!!
+x|
+x{
+xn
+x3!
+x2!
+x>!
+x<!
+x;!
+x9!
+x8!
+x0!
+x-!
+x*!
+x,!
+x4"
+0y"
+1z"
+x-#
+x*
+x'
+x&
+x$
+x?
+x>
+x;
+x:
+x[
+xY
+xX
+xV
+xU
+x-
+x,
+x8
+x7
+x4
+x3
+xI
+xH
+xT
+xR
+xQ
+xO
+xN
+xF
+xC
+xB
+x@
+xH!
+xd!
+xL#
+xg!
+xK!
+xp
+x.!
+x5"
+x8"
+x+!
+xm
+x(
+xD
+x)#
+x*#
+xA
+x%
+x6"
+x9"
+xy"
+xz"
+#30000
+0\
+0j
+0~!
+#45000
+1\
+1j
+1~!
+x7"
+x:"
+x;#
+x<#
+x,"
+x;"
+x'#
+x4#
+x<"
+xx"
+#60000
+0\
+0j
+0~!
+#75000
+1\
+1j
+1~!
+x="
+x,#
+x>"
+x{"
+#90000
+0\
+0j
+0~!
+#100000
+1"
+1#
+1i
+1h
+1'"
+1!"
+#105000
+1\
+1j
+1~!
+1P"
+1O"
+x?"
+x>#
+08#
+09#
+x%"
+0,"
+x("
+x*"
+1+"
+x-"
+x/"
+x0"
+x3"
+x@"
+xB"
+x6#
+x=#
+x1#
+x3#
+x2#
+x/#
+05#
+x.#
+x0#
+14#
+x:#
+#120000
+0\
+0j
+0~!
+#135000
+1\
+1j
+1~!
+#150000
+0\
+0j
+0~!
+#160000
+0"
+0#
+0i
+0h
+0'"
+0!"
+#165000
+1\
+1j
+1~!
+0P"
+0O"
+18#
+19#
+0%"
+x+"
+x,"
+0@"
+1=#
+x4#
+x5#
+1:#
+#180000
+0\
+0j
+0~!
+#195000
+1\
+1j
+1~!
+#210000
+0\
+0j
+0~!
+#225000
+1\
+1j
+1~!
+#240000
+0\
+1!
+0j
+1g
+1&"
+0~!
+#255000
+1\
+1j
+1~!
+1N"
+07#
+02"
+1K#
+#270000
+0\
+0j
+0~!
+#285000
+1\
+1j
+1~!
+#300000
+0\
+0j
+0~!
+#315000
+1\
+1j
+1~!
+#330000
+0\
+0j
+0~!
+#345000
+1\
+1j
+1~!
+#360000
+0\
+0j
+0~!
+#375000
+1\
+1j
+1~!
+#390000
+0\
+0j
+0~!
+#400000
+0!
+0g
+0&"
+#405000
+1\
+1j
+1~!
+0N"
+17#
+x2"
+04"
+1L#
+xK#
+x4"
+05"
+1*#
+xL#
+x5"
+x*#
+#420000
+0\
+0j
+0~!
+#435000
+1\
+1j
+1~!
+#450000
+0\
+0j
+0~!
+#465000
+1\
+1j
+1~!
+#480000
+0\
+0j
+0~!
+#495000
+1\
+1j
+1~!
+#510000
+0\
+0j
+0~!
+#525000
+1\
+1j
+1~!
+#540000
+0\
+0j
+0~!
+#555000
+1\
+1j
+1~!
+#570000
+0\
+0j
+0~!
+#585000
+1\
+1j
+1~!
+#600000
+0\
+0j
+0~!
+#615000
+1\
+1j
+1~!
+#630000
+0\
+0j
+0~!
+#645000
+1\
+1j
+1~!
+#660000
+0\
+0j
+0~!
+#675000
+1\
+1j
+1~!
+#690000
+0\
+0j
+0~!
+#705000
+1\
+1j
+1~!
+#720000
+0\
+0j
+0~!
+#735000
+1\
+1j
+1~!
+#750000
+0\
+0j
+0~!
+#765000
+1\
+1j
+1~!
+#780000
+0\
+0j
+0~!
+#795000
+1\
+1j
+1~!
+#810000
+0\
+0j
+0~!
+#825000
+1\
+1j
+1~!
+#840000
+0\
+0j
+0~!
+#855000
+1\
+1j
+1~!
+#870000
+0\
+0j
+0~!
+#885000
+1\
+1j
+1~!
+#900000
+0\
+0j
+0~!
+#915000
+1\
+1j
+1~!
+#930000
+0\
+0j
+0~!
+#945000
+1\
+1j
+1~!
+#960000
+0\
+0j
+0~!
+#975000
+1\
+1j
+1~!
+#990000
+0\
+0j
+0~!
+#1000000

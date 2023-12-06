@@ -1,0 +1,165 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "carta1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "carta1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "carta1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "carta1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "carta1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "carta1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "carta2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "carta2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "carta3[0]",
+					"strict" : false
+				},
+				{
+					"name" : "carta3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "carta3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "carta3[5]",
+					"strict" : false
+				},
+				{
+					"name" : "carta4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "carta4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "carta4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "carta4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "carta5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "carta5[2]",
+					"strict" : false
+				},
+				{
+					"name" : "carta5[3]",
+					"strict" : false
+				},
+				{
+					"name" : "carta5[4]",
+					"strict" : false
+				},
+				{
+					"name" : "carta5[5]",
+					"strict" : false
+				},
+				{
+					"name" : "carta5[6]",
+					"strict" : false
+				},
+				{
+					"name" : "carta6[4]",
+					"strict" : false
+				},
+				{
+					"name" : "carta6[5]",
+					"strict" : false
+				},
+				{
+					"name" : "carta7[0]",
+					"strict" : false
+				},
+				{
+					"name" : "carta7[2]",
+					"strict" : false
+				},
+				{
+					"name" : "carta7[3]",
+					"strict" : false
+				},
+				{
+					"name" : "carta7[5]",
+					"strict" : false
+				},
+				{
+					"name" : "carta7[6]",
+					"strict" : false
+				},
+				{
+					"name" : "carta8[0]",
+					"strict" : false
+				},
+				{
+					"name" : "carta8[2]",
+					"strict" : false
+				},
+				{
+					"name" : "carta8[3]",
+					"strict" : false
+				},
+				{
+					"name" : "carta8[5]",
+					"strict" : false
+				},
+				{
+					"name" : "carta8[6]",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "BTN_IN[0]",
+					"strict" : false
+				},
+				{
+					"name" : "CLRN",
+					"strict" : false
+				},
+				{
+					"name" : "BTN_IN[2]",
+					"strict" : false
+				},
+				{
+					"name" : "BTN_IN[1]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

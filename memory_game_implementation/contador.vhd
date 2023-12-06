@@ -32,8 +32,8 @@ BEGIN
 		port map(
 			d => d,
          clk => CLK,
-			clrn => "1",
-			ena => "1",
+			clrn => '1',
+			ena => '1',
          q => saida
 		);
 

@@ -1,6 +1,6 @@
 Analysis & Synthesis report for memory_game
-Tue Dec 05 14:53:06 2023
-Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+Wed Dec  6 09:32:09 2023
+Quartus Prime Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
 
 
 ---------------------
@@ -10,45 +10,99 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Messages
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |memory_game|maquinaEstados:maquinaEstadoss|state_reg
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Parameter Settings for User Entity Instance: carta:d_carta1|registrador:mem_carta
+ 13. Parameter Settings for User Entity Instance: carta:d_carta1|registrador:estadoCarta
+ 14. Parameter Settings for User Entity Instance: carta:d_carta1|display:disp_carta
+ 15. Parameter Settings for User Entity Instance: carta:d_carta2|registrador:mem_carta
+ 16. Parameter Settings for User Entity Instance: carta:d_carta2|registrador:estadoCarta
+ 17. Parameter Settings for User Entity Instance: carta:d_carta2|display:disp_carta
+ 18. Parameter Settings for User Entity Instance: carta:d_carta3|registrador:mem_carta
+ 19. Parameter Settings for User Entity Instance: carta:d_carta3|registrador:estadoCarta
+ 20. Parameter Settings for User Entity Instance: carta:d_carta3|display:disp_carta
+ 21. Parameter Settings for User Entity Instance: carta:d_carta4|registrador:mem_carta
+ 22. Parameter Settings for User Entity Instance: carta:d_carta4|registrador:estadoCarta
+ 23. Parameter Settings for User Entity Instance: carta:d_carta4|display:disp_carta
+ 24. Parameter Settings for User Entity Instance: carta:d_carta5|registrador:mem_carta
+ 25. Parameter Settings for User Entity Instance: carta:d_carta5|registrador:estadoCarta
+ 26. Parameter Settings for User Entity Instance: carta:d_carta5|display:disp_carta
+ 27. Parameter Settings for User Entity Instance: carta:d_carta6|registrador:mem_carta
+ 28. Parameter Settings for User Entity Instance: carta:d_carta6|registrador:estadoCarta
+ 29. Parameter Settings for User Entity Instance: carta:d_carta6|display:disp_carta
+ 30. Parameter Settings for User Entity Instance: carta:d_carta7|registrador:mem_carta
+ 31. Parameter Settings for User Entity Instance: carta:d_carta7|registrador:estadoCarta
+ 32. Parameter Settings for User Entity Instance: carta:d_carta7|display:disp_carta
+ 33. Parameter Settings for User Entity Instance: carta:d_carta8|registrador:mem_carta
+ 34. Parameter Settings for User Entity Instance: carta:d_carta8|registrador:estadoCarta
+ 35. Parameter Settings for User Entity Instance: carta:d_carta8|display:disp_carta
+ 36. Parameter Settings for User Entity Instance: tecladoNumerico:teclado|registrador:Reg
+ 37. Parameter Settings for User Entity Instance: comparador:comparadorDeCartasD
+ 38. Port Connectivity Checks: "maquinaEstados:maquinaEstadoss"
+ 39. Port Connectivity Checks: "comparador:comparadorDeCartasD"
+ 40. Port Connectivity Checks: "tecladoNumerico:teclado|registrador:Reg"
+ 41. Port Connectivity Checks: "carta:d_carta8"
+ 42. Port Connectivity Checks: "carta:d_carta7"
+ 43. Port Connectivity Checks: "carta:d_carta6"
+ 44. Port Connectivity Checks: "carta:d_carta5"
+ 45. Port Connectivity Checks: "carta:d_carta4"
+ 46. Port Connectivity Checks: "carta:d_carta3"
+ 47. Port Connectivity Checks: "carta:d_carta2"
+ 48. Port Connectivity Checks: "carta:d_carta1|registrador:estadoCarta"
+ 49. Port Connectivity Checks: "carta:d_carta1|registrador:mem_carta"
+ 50. Port Connectivity Checks: "carta:d_carta1"
+ 51. Post-Synthesis Netlist Statistics for Top Partition
+ 52. Elapsed Time Per Partition
+ 53. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2013 Altera Corporation
-Your use of Altera Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+Copyright (C) 2023  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+--------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                             ;
-+-----------------------------+--------------------------------------------+
-; Analysis & Synthesis Status ; Failed - Tue Dec 05 14:53:06 2023          ;
-; Quartus II 64-Bit Version   ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
-; Revision Name               ; memory_game                                ;
-; Top-level Entity Name       ; memory_game                                ;
-; Family                      ; Cyclone V                                  ;
-; Logic utilization (in ALMs) ; N/A until Partition Merge                  ;
-; Total registers             ; N/A until Partition Merge                  ;
-; Total pins                  ; N/A until Partition Merge                  ;
-; Total virtual pins          ; N/A until Partition Merge                  ;
-; Total block memory bits     ; N/A until Partition Merge                  ;
-; Total PLLs                  ; N/A until Partition Merge                  ;
-; Total DLLs                  ; N/A until Partition Merge                  ;
-+-----------------------------+--------------------------------------------+
++----------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                     ;
++---------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status     ; Successful - Wed Dec  6 09:32:09 2023          ;
+; Quartus Prime Version           ; 22.1std.2 Build 922 07/20/2023 SC Lite Edition ;
+; Revision Name                   ; memory_game                                    ;
+; Top-level Entity Name           ; memory_game                                    ;
+; Family                          ; Cyclone V                                      ;
+; Logic utilization (in ALMs)     ; N/A                                            ;
+; Total registers                 ; 18                                             ;
+; Total pins                      ; 61                                             ;
+; Total virtual pins              ; 0                                              ;
+; Total block memory bits         ; 0                                              ;
+; Total DSP Blocks                ; 0                                              ;
+; Total HSSI RX PCSs              ; 0                                              ;
+; Total HSSI PMA RX Deserializers ; 0                                              ;
+; Total HSSI TX PCSs              ; 0                                              ;
+; Total HSSI PMA TX Serializers   ; 0                                              ;
+; Total PLLs                      ; 0                                              ;
+; Total DLLs                      ; 0                                              ;
++---------------------------------+------------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -58,15 +112,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
 ; Top-level entity name                                                           ; memory_game        ; memory_game        ;
-; Family name                                                                     ; Cyclone V          ; Cyclone IV GX      ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
 ; Enable compact report table                                                     ; Off                ; Off                ;
 ; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
 ; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
 ; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
 ; Preserve fewer node names                                                       ; On                 ; On                 ;
-; Disable OpenCore Plus hardware evaluation                                       ; Off                ; Off                ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
 ; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
 ; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                        ; Auto               ; Auto               ;
@@ -117,7 +171,7 @@ applicable agreement for further details.
 ; Report Connectivity Checks                                                      ; On                 ; On                 ;
 ; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
 ; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
-; PowerPlay Power Optimization                                                    ; Normal compilation ; Normal compilation ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
 ; HDL message level                                                               ; Level2             ; Level2             ;
 ; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
 ; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
@@ -133,55 +187,882 @@ applicable agreement for further details.
 ; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
 ; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
 ; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
-; Synthesis Seed                                                                  ; 1                  ; 1                  ;
 ; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 
 
-Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
-+-------------------------------------+
-; Parallel Compilation                ;
-+----------------------------+--------+
-; Processors                 ; Number ;
-+----------------------------+--------+
-; Number detected on machine ; 4      ;
-; Maximum allowed            ; 1      ;
-+----------------------------+--------+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 4           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processors 3-4         ;   0.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                    ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                             ; Library ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
+; filtroCartasAtivadas.vhd         ; yes             ; User VHDL File  ; C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd ;         ;
+; carta.vhd                        ; yes             ; User VHDL File  ; C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/carta.vhd                ;         ;
+; display.vhd                      ; yes             ; User VHDL File  ; C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/display.vhd              ;         ;
+; tecladoNumerico.vhd              ; yes             ; User VHDL File  ; C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/tecladoNumerico.vhd      ;         ;
+; comparador.vhd                   ; yes             ; User VHDL File  ; C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/comparador.vhd           ;         ;
+; memory_game.vhd                  ; yes             ; User VHDL File  ; C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd          ;         ;
+; maquinaEstados.vhd               ; yes             ; User VHDL File  ; C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd       ;         ;
+; registrador.vhd                  ; yes             ; User VHDL File  ; C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/registrador.vhd          ;         ;
++----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 20        ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 35        ;
+;     -- 7 input functions                    ; 2         ;
+;     -- 6 input functions                    ; 0         ;
+;     -- 5 input functions                    ; 8         ;
+;     -- 4 input functions                    ; 0         ;
+;     -- <=3 input functions                  ; 25        ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 18        ;
+;                                             ;           ;
+; I/O pins                                    ; 61        ;
+;                                             ;           ;
+; Total DSP Blocks                            ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; CLK~input ;
+; Maximum fan-out                             ; 18        ;
+; Total fan-out                               ; 255       ;
+; Average fan-out                             ; 1.46      ;
++---------------------------------------------+-----------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                  ;
++-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------+-----------------+--------------+
+; Compilation Hierarchy Node          ; Combinational ALUTs ; Dedicated Logic Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                                  ; Entity Name     ; Library Name ;
++-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------+-----------------+--------------+
+; |memory_game                        ; 35 (0)              ; 18 (0)                    ; 0                 ; 0          ; 61   ; 0            ; |memory_game                                         ; memory_game     ; work         ;
+;    |carta:d_carta1|                 ; 1 (0)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta1                          ; carta           ; work         ;
+;       |display:disp_carta|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta1|display:disp_carta       ; display         ; work         ;
+;       |registrador:estadoCarta|     ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta1|registrador:estadoCarta  ; registrador     ; work         ;
+;    |carta:d_carta2|                 ; 0 (0)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta2                          ; carta           ; work         ;
+;       |registrador:estadoCarta|     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta2|registrador:estadoCarta  ; registrador     ; work         ;
+;    |carta:d_carta3|                 ; 0 (0)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta3                          ; carta           ; work         ;
+;       |registrador:estadoCarta|     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta3|registrador:estadoCarta  ; registrador     ; work         ;
+;    |carta:d_carta4|                 ; 0 (0)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta4                          ; carta           ; work         ;
+;       |registrador:estadoCarta|     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta4|registrador:estadoCarta  ; registrador     ; work         ;
+;    |carta:d_carta5|                 ; 1 (0)               ; 2 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta5                          ; carta           ; work         ;
+;       |display:disp_carta|          ; 1 (1)               ; 0 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta5|display:disp_carta       ; display         ; work         ;
+;       |registrador:estadoCarta|     ; 0 (0)               ; 2 (2)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta5|registrador:estadoCarta  ; registrador     ; work         ;
+;    |carta:d_carta6|                 ; 0 (0)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta6                          ; carta           ; work         ;
+;       |registrador:estadoCarta|     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta6|registrador:estadoCarta  ; registrador     ; work         ;
+;    |carta:d_carta7|                 ; 0 (0)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta7                          ; carta           ; work         ;
+;       |registrador:estadoCarta|     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta7|registrador:estadoCarta  ; registrador     ; work         ;
+;    |carta:d_carta8|                 ; 0 (0)               ; 1 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta8                          ; carta           ; work         ;
+;       |registrador:estadoCarta|     ; 0 (0)               ; 1 (1)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|carta:d_carta8|registrador:estadoCarta  ; registrador     ; work         ;
+;    |maquinaEstados:maquinaEstadoss| ; 33 (33)             ; 5 (5)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|maquinaEstados:maquinaEstadoss          ; maquinaEstados  ; work         ;
+;    |tecladoNumerico:teclado|        ; 0 (0)               ; 3 (0)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|tecladoNumerico:teclado                 ; tecladoNumerico ; work         ;
+;       |registrador:Reg|             ; 0 (0)               ; 3 (3)                     ; 0                 ; 0          ; 0    ; 0            ; |memory_game|tecladoNumerico:teclado|registrador:Reg ; registrador     ; work         ;
++-------------------------------------+---------------------+---------------------------+-------------------+------------+------+--------------+------------------------------------------------------+-----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |memory_game|maquinaEstados:maquinaEstadoss|state_reg                                                                ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; Name         ; state_reg.s7 ; state_reg.s6 ; state_reg.s5 ; state_reg.s4 ; state_reg.s3 ; state_reg.s2 ; state_reg.s1 ; state_reg.s0 ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; state_reg.s0 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; state_reg.s1 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 1            ;
+; state_reg.s2 ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 1            ;
+; state_reg.s3 ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 1            ;
+; state_reg.s4 ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 1            ;
+; state_reg.s5 ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state_reg.s6 ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state_reg.s7 ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                                                        ;
++-----------------------------------------------------+---------------------------------------------+------------------------+
+; Latch Name                                          ; Latch Enable Signal                         ; Free of Timing Hazards ;
++-----------------------------------------------------+---------------------------------------------+------------------------+
+; maquinaEstados:maquinaEstadoss|enableCard_1[1]      ; maquinaEstados:maquinaEstadoss|Selector38   ; yes                    ;
+; maquinaEstados:maquinaEstadoss|enableCard_1[0]      ; maquinaEstados:maquinaEstadoss|Selector38   ; yes                    ;
+; maquinaEstados:maquinaEstadoss|enableCard_2[0]      ; maquinaEstados:maquinaEstadoss|Selector35   ; yes                    ;
+; maquinaEstados:maquinaEstadoss|enableCard_3[2]      ; maquinaEstados:maquinaEstadoss|Selector33   ; yes                    ;
+; maquinaEstados:maquinaEstadoss|enableCard_4[2]      ; maquinaEstados:maquinaEstadoss|Selector31   ; yes                    ;
+; maquinaEstados:maquinaEstadoss|enableCard_5[1]      ; maquinaEstados:maquinaEstadoss|Selector30   ; yes                    ;
+; maquinaEstados:maquinaEstadoss|enableCard_5[0]      ; maquinaEstados:maquinaEstadoss|Selector30   ; yes                    ;
+; maquinaEstados:maquinaEstadoss|enableCard_6[0]      ; maquinaEstados:maquinaEstadoss|Selector29   ; yes                    ;
+; maquinaEstados:maquinaEstadoss|enableCard_7[1]      ; maquinaEstados:maquinaEstadoss|Selector28   ; yes                    ;
+; maquinaEstados:maquinaEstadoss|enableCard_8[1]      ; maquinaEstados:maquinaEstadoss|Selector27   ; yes                    ;
+; maquinaEstados:maquinaEstadoss|next_state.s4_1446   ; maquinaEstados:maquinaEstadoss|state_reg.s4 ; yes                    ;
+; maquinaEstados:maquinaEstadoss|next_state.s2_1468   ; maquinaEstados:maquinaEstadoss|state_reg.s4 ; yes                    ;
+; maquinaEstados:maquinaEstadoss|next_state.s1_1479   ; maquinaEstados:maquinaEstadoss|state_reg.s4 ; yes                    ;
+; maquinaEstados:maquinaEstadoss|next_state.s3_1457   ; maquinaEstados:maquinaEstadoss|state_reg.s4 ; yes                    ;
+; Number of user-specified and inferred latches = 14  ;                                             ;                        ;
++-----------------------------------------------------+---------------------------------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++----------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                     ;
++-----------------------------------------------+----------------------------------------+
+; Register name                                 ; Reason for Removal                     ;
++-----------------------------------------------+----------------------------------------+
+; comparador:comparadorDeCartasD|eq             ; Stuck at GND due to stuck port clock   ;
+; carta:d_carta8|registrador:mem_carta|q[2]     ; Stuck at GND due to stuck port data_in ;
+; carta:d_carta8|registrador:mem_carta|q[1]     ; Stuck at VCC due to stuck port data_in ;
+; carta:d_carta8|registrador:mem_carta|q[0]     ; Stuck at GND due to stuck port data_in ;
+; carta:d_carta7|registrador:mem_carta|q[2]     ; Stuck at GND due to stuck port data_in ;
+; carta:d_carta7|registrador:mem_carta|q[1]     ; Stuck at VCC due to stuck port data_in ;
+; carta:d_carta7|registrador:mem_carta|q[0]     ; Stuck at GND due to stuck port data_in ;
+; carta:d_carta6|registrador:mem_carta|q[1,2]   ; Stuck at GND due to stuck port data_in ;
+; carta:d_carta6|registrador:mem_carta|q[0]     ; Stuck at VCC due to stuck port data_in ;
+; carta:d_carta5|registrador:mem_carta|q[2]     ; Stuck at GND due to stuck port data_in ;
+; carta:d_carta5|registrador:mem_carta|q[0,1]   ; Stuck at VCC due to stuck port data_in ;
+; carta:d_carta4|registrador:mem_carta|q[2]     ; Stuck at VCC due to stuck port data_in ;
+; carta:d_carta4|registrador:mem_carta|q[0,1]   ; Stuck at GND due to stuck port data_in ;
+; carta:d_carta3|registrador:mem_carta|q[2]     ; Stuck at VCC due to stuck port data_in ;
+; carta:d_carta3|registrador:mem_carta|q[0,1]   ; Stuck at GND due to stuck port data_in ;
+; carta:d_carta2|registrador:mem_carta|q[1,2]   ; Stuck at GND due to stuck port data_in ;
+; carta:d_carta2|registrador:mem_carta|q[0]     ; Stuck at VCC due to stuck port data_in ;
+; carta:d_carta1|registrador:mem_carta|q[2]     ; Stuck at GND due to stuck port data_in ;
+; carta:d_carta1|registrador:mem_carta|q[0,1]   ; Stuck at VCC due to stuck port data_in ;
+; carta:d_carta1|registrador:estadoCarta|q[2]   ; Lost fanout                            ;
+; carta:d_carta2|registrador:estadoCarta|q[1,2] ; Lost fanout                            ;
+; carta:d_carta3|registrador:estadoCarta|q[0,1] ; Lost fanout                            ;
+; carta:d_carta4|registrador:estadoCarta|q[0,1] ; Lost fanout                            ;
+; carta:d_carta5|registrador:estadoCarta|q[2]   ; Lost fanout                            ;
+; carta:d_carta6|registrador:estadoCarta|q[1,2] ; Lost fanout                            ;
+; carta:d_carta7|registrador:estadoCarta|q[0,2] ; Lost fanout                            ;
+; carta:d_carta8|registrador:estadoCarta|q[0,2] ; Lost fanout                            ;
+; maquinaEstados:maquinaEstadoss|state_reg.s5   ; Lost fanout                            ;
+; maquinaEstados:maquinaEstadoss|state_reg.s6   ; Lost fanout                            ;
+; maquinaEstados:maquinaEstadoss|state_reg.s7   ; Stuck at GND due to stuck port data_in ;
+; Total Number of Removed Registers = 42        ;                                        ;
++-----------------------------------------------+----------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 18    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 5     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta1|registrador:mem_carta ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta1|registrador:estadoCarta ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta1|display:disp_carta ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta2|registrador:mem_carta ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta2|registrador:estadoCarta ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta2|display:disp_carta ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta3|registrador:mem_carta ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta3|registrador:estadoCarta ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta3|display:disp_carta ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta4|registrador:mem_carta ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta4|registrador:estadoCarta ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta4|display:disp_carta ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta5|registrador:mem_carta ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta5|registrador:estadoCarta ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta5|display:disp_carta ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta6|registrador:mem_carta ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta6|registrador:estadoCarta ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta6|display:disp_carta ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta7|registrador:mem_carta ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta7|registrador:estadoCarta ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta7|display:disp_carta ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta8|registrador:mem_carta ;
++----------------+-------+----------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                     ;
++----------------+-------+----------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                           ;
++----------------+-------+----------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta8|registrador:estadoCarta ;
++----------------+-------+------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                       ;
++----------------+-------+------------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                             ;
++----------------+-------+------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: carta:d_carta8|display:disp_carta ;
++----------------+-------+-------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                  ;
++----------------+-------+-------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                        ;
++----------------+-------+-------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: tecladoNumerico:teclado|registrador:Reg ;
++----------------+-------+-------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                        ;
++----------------+-------+-------------------------------------------------------------+
+; w              ; 3     ; Signed Integer                                              ;
++----------------+-------+-------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: comparador:comparadorDeCartasD ;
++----------------+-------+----------------------------------------------------+
+; Parameter Name ; Value ; Type                                               ;
++----------------+-------+----------------------------------------------------+
+; w              ; 7     ; Signed Integer                                     ;
++----------------+-------+----------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "maquinaEstados:maquinaEstadoss"                                                                   ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port               ; Type   ; Severity ; Details                                                                             ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------+
+; cnttwistedcards    ; Input  ; Info     ; Stuck at GND                                                                        ;
+; demuxenable        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; counterenable      ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; newcountertwicards ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "comparador:comparadorDeCartasD"                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; gt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; lt   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "tecladoNumerico:teclado|registrador:Reg" ;
++-------+-------+----------+------------------------------------------+
+; Port  ; Type  ; Severity ; Details                                  ;
++-------+-------+----------+------------------------------------------+
+; clear ; Input ; Info     ; Stuck at VCC                             ;
++-------+-------+----------+------------------------------------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "carta:d_carta8" ;
++---------+-------+----------+---------------+
+; Port    ; Type  ; Severity ; Details       ;
++---------+-------+----------+---------------+
+; data[2] ; Input ; Info     ; Stuck at GND  ;
+; data[1] ; Input ; Info     ; Stuck at VCC  ;
+; data[0] ; Input ; Info     ; Stuck at GND  ;
+; clrn    ; Input ; Info     ; Stuck at VCC  ;
++---------+-------+----------+---------------+
+
+
++--------------------------------------------+
+; Port Connectivity Checks: "carta:d_carta7" ;
++---------+-------+----------+---------------+
+; Port    ; Type  ; Severity ; Details       ;
++---------+-------+----------+---------------+
+; data[2] ; Input ; Info     ; Stuck at GND  ;
+; data[1] ; Input ; Info     ; Stuck at VCC  ;
+; data[0] ; Input ; Info     ; Stuck at GND  ;
+; clrn    ; Input ; Info     ; Stuck at VCC  ;
++---------+-------+----------+---------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "carta:d_carta6"   ;
++------------+-------+----------+--------------+
+; Port       ; Type  ; Severity ; Details      ;
++------------+-------+----------+--------------+
+; data[2..1] ; Input ; Info     ; Stuck at GND ;
+; data[0]    ; Input ; Info     ; Stuck at VCC ;
+; clrn       ; Input ; Info     ; Stuck at VCC ;
++------------+-------+----------+--------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "carta:d_carta5"   ;
++------------+-------+----------+--------------+
+; Port       ; Type  ; Severity ; Details      ;
++------------+-------+----------+--------------+
+; data[1..0] ; Input ; Info     ; Stuck at VCC ;
+; data[2]    ; Input ; Info     ; Stuck at GND ;
+; clrn       ; Input ; Info     ; Stuck at VCC ;
++------------+-------+----------+--------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "carta:d_carta4"   ;
++------------+-------+----------+--------------+
+; Port       ; Type  ; Severity ; Details      ;
++------------+-------+----------+--------------+
+; data[1..0] ; Input ; Info     ; Stuck at GND ;
+; data[2]    ; Input ; Info     ; Stuck at VCC ;
+; clrn       ; Input ; Info     ; Stuck at VCC ;
++------------+-------+----------+--------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "carta:d_carta3"   ;
++------------+-------+----------+--------------+
+; Port       ; Type  ; Severity ; Details      ;
++------------+-------+----------+--------------+
+; data[1..0] ; Input ; Info     ; Stuck at GND ;
+; data[2]    ; Input ; Info     ; Stuck at VCC ;
+; clrn       ; Input ; Info     ; Stuck at VCC ;
++------------+-------+----------+--------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "carta:d_carta2"   ;
++------------+-------+----------+--------------+
+; Port       ; Type  ; Severity ; Details      ;
++------------+-------+----------+--------------+
+; data[2..1] ; Input ; Info     ; Stuck at GND ;
+; data[0]    ; Input ; Info     ; Stuck at VCC ;
+; clrn       ; Input ; Info     ; Stuck at VCC ;
++------------+-------+----------+--------------+
+
+
++--------------------------------------------------------------------+
+; Port Connectivity Checks: "carta:d_carta1|registrador:estadoCarta" ;
++------+-------+----------+------------------------------------------+
+; Port ; Type  ; Severity ; Details                                  ;
++------+-------+----------+------------------------------------------+
+; ena  ; Input ; Info     ; Stuck at VCC                             ;
++------+-------+----------+------------------------------------------+
+
+
++------------------------------------------------------------------+
+; Port Connectivity Checks: "carta:d_carta1|registrador:mem_carta" ;
++-------+-------+----------+---------------------------------------+
+; Port  ; Type  ; Severity ; Details                               ;
++-------+-------+----------+---------------------------------------+
+; clear ; Input ; Info     ; Stuck at VCC                          ;
+; ena   ; Input ; Info     ; Stuck at VCC                          ;
++-------+-------+----------+---------------------------------------+
+
+
++----------------------------------------------+
+; Port Connectivity Checks: "carta:d_carta1"   ;
++------------+-------+----------+--------------+
+; Port       ; Type  ; Severity ; Details      ;
++------------+-------+----------+--------------+
+; data[1..0] ; Input ; Info     ; Stuck at VCC ;
+; data[2]    ; Input ; Info     ; Stuck at GND ;
+; clrn       ; Input ; Info     ; Stuck at VCC ;
++------------+-------+----------+--------------+
+
+
++-----------------------------------------------------+
+; Post-Synthesis Netlist Statistics for Top Partition ;
++-----------------------+-----------------------------+
+; Type                  ; Count                       ;
++-----------------------+-----------------------------+
+; arriav_ff             ; 18                          ;
+;     CLR               ; 5                           ;
+;     plain             ; 13                          ;
+; arriav_lcell_comb     ; 38                          ;
+;     extend            ; 2                           ;
+;         7 data inputs ; 2                           ;
+;     normal            ; 36                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 2                           ;
+;         2 data inputs ; 9                           ;
+;         3 data inputs ; 16                          ;
+;         5 data inputs ; 8                           ;
+; boundary_port         ; 61                          ;
+;                       ;                             ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 2.66                        ;
++-----------------------+-----------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
 
 
 +-------------------------------+
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus II 64-Bit Analysis & Synthesis
-    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Dec 05 14:53:03 2023
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 22.1std.2 Build 922 07/20/2023 SC Lite Edition
+    Info: Processing started: Wed Dec  6 09:31:59 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off memory_game -c memory_game
-Warning (20028): Parallel compilation is not licensed and has been disabled
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file registradorestadocarta.vhd
+    Info (12022): Found design unit 1: registradorEstadoCarta-arch_1 File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/registradorEstadoCarta.vhd Line: 14
+    Info (12023): Found entity 1: registradorEstadoCarta File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/registradorEstadoCarta.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file filtrocartasativadas.vhd
+    Info (12022): Found design unit 1: filtroCartasAtivadas-arch_2 File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 21
+    Info (12023): Found entity 1: filtroCartasAtivadas File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file carta.vhd
+    Info (12022): Found design unit 1: carta-arch_2 File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/carta.vhd Line: 18
+    Info (12023): Found entity 1: carta File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/carta.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file display.vhd
-    Info (12022): Found design unit 1: display-Behavioral
-    Info (12023): Found entity 1: display
+    Info (12022): Found design unit 1: display-Behavioral File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/display.vhd Line: 12
+    Info (12023): Found entity 1: display File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/display.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file tecladonumerico.vhd
-    Info (12022): Found design unit 1: tecladoNumerico-Behavioral
-    Info (12023): Found entity 1: tecladoNumerico
+    Info (12022): Found design unit 1: tecladoNumerico-Behavioral File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/tecladoNumerico.vhd Line: 15
+    Info (12023): Found entity 1: tecladoNumerico File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/tecladoNumerico.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file comparador.vhd
-    Info (12022): Found design unit 1: comparador-behavior
-    Info (12023): Found entity 1: comparador
+    Info (12022): Found design unit 1: comparador-behavior File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/comparador.vhd Line: 15
+    Info (12023): Found entity 1: comparador File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/comparador.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file contador.vhd
-    Info (12022): Found design unit 1: contador-arch_1
-    Info (12023): Found entity 1: contador
+    Info (12022): Found design unit 1: contador-arch_1 File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/contador.vhd Line: 15
+    Info (12023): Found entity 1: contador File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/contador.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file memory_game.vhd
-    Info (12022): Found design unit 1: memory_game-arch_2
-    Info (12023): Found entity 1: memory_game
-Info (12021): Found 2 design units, including 1 entities, in source file registrador3bits.vhd
-    Info (12022): Found design unit 1: registrador3bits-arch_1
-    Info (12023): Found entity 1: registrador3bits
-Error (10482): VHDL error at registrador3bits.vhd(18): object "clrn" is used but not declared File: C:/Users/KIWAL/Desktop/Emanuel Kywal/Estudos e Acadêmicos/UFRN/4° Período - 2023.2/Circuitos Lógicos/LogicCircuits/memory-game/memory_game_implementation/registrador3bits.vhd Line: 18
-Error (10482): VHDL error at registrador3bits.vhd(16): object "clrn" is used but not declared File: C:/Users/KIWAL/Desktop/Emanuel Kywal/Estudos e Acadêmicos/UFRN/4° Período - 2023.2/Circuitos Lógicos/LogicCircuits/memory-game/memory_game_implementation/registrador3bits.vhd Line: 16
-Error: Quartus II 64-Bit Analysis & Synthesis was unsuccessful. 2 errors, 1 warning
-    Error: Peak virtual memory: 4689 megabytes
-    Error: Processing ended: Tue Dec 05 14:53:06 2023
-    Error: Elapsed time: 00:00:03
-    Error: Total CPU time (on all processors): 00:00:03
+    Info (12022): Found design unit 1: memory_game-arch_2 File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 21
+    Info (12023): Found entity 1: memory_game File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file maquinaestados.vhd
+    Info (12022): Found design unit 1: maquinaEstados-behavioral File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 46
+    Info (12023): Found entity 1: maquinaEstados File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 5
+Info (12021): Found 2 design units, including 1 entities, in source file registrador.vhd
+    Info (12022): Found design unit 1: registrador-arch_1 File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/registrador.vhd Line: 14
+    Info (12023): Found entity 1: registrador File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/registrador.vhd Line: 5
+Info (12127): Elaborating entity "memory_game" for the top level hierarchy
+Warning (10540): VHDL Signal Declaration warning at memory_game.vhd(32): used explicit default value for signal "contadorCartas" because signal was never assigned a value File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 32
+Info (12128): Elaborating entity "carta" for hierarchy "carta:d_carta1" File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 145
+Warning (10492): VHDL Process Statement warning at carta.vhd(74): signal "s_carta" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/carta.vhd Line: 74
+Warning (10492): VHDL Process Statement warning at carta.vhd(74): signal "r_carta" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/carta.vhd Line: 74
+Warning (10492): VHDL Process Statement warning at carta.vhd(76): signal "s_carta" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/carta.vhd Line: 76
+Warning (10492): VHDL Process Statement warning at carta.vhd(76): signal "r_carta" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/carta.vhd Line: 76
+Warning (10492): VHDL Process Statement warning at carta.vhd(82): signal "disCarta" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/carta.vhd Line: 82
+Warning (10492): VHDL Process Statement warning at carta.vhd(84): signal "disCarta" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/carta.vhd Line: 84
+Warning (10492): VHDL Process Statement warning at carta.vhd(87): signal "s_carta" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/carta.vhd Line: 87
+Info (12128): Elaborating entity "registrador" for hierarchy "carta:d_carta1|registrador:mem_carta" File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/carta.vhd Line: 45
+Info (12128): Elaborating entity "display" for hierarchy "carta:d_carta1|display:disp_carta" File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/carta.vhd Line: 63
+Info (12128): Elaborating entity "tecladoNumerico" for hierarchy "tecladoNumerico:teclado" File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 249
+Info (12128): Elaborating entity "comparador" for hierarchy "comparador:comparadorDeCartasD" File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 257
+Info (12128): Elaborating entity "filtroCartasAtivadas" for hierarchy "filtroCartasAtivadas:filtroCartasAtivadass" File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 268
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(27): signal "INPUT_C1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 27
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(28): signal "INPUT_C1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 28
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(29): signal "INPUT_C1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 29
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(30): signal "INPUT_C2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 30
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(31): signal "INPUT_C2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(32): signal "INPUT_C2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 32
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(33): signal "INPUT_C3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 33
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(34): signal "INPUT_C3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 34
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(35): signal "INPUT_C3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 35
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(36): signal "INPUT_C4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 36
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(37): signal "INPUT_C4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 37
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(38): signal "INPUT_C4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 38
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(39): signal "INPUT_C5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 39
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(40): signal "INPUT_C5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 40
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(41): signal "INPUT_C5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 41
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(42): signal "INPUT_C6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 42
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(43): signal "INPUT_C6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 43
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(44): signal "INPUT_C6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 44
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(45): signal "INPUT_C7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 45
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(46): signal "INPUT_C7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 46
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(47): signal "INPUT_C7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 47
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(48): signal "INPUT_C8" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 48
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(49): signal "INPUT_C8" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 49
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(50): signal "INPUT_C8" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 50
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(53): signal "INPUT_C1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 53
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(53): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 53
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(54): signal "INPUT_C1" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 54
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(55): signal "INPUT_C2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 55
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(55): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 55
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(56): signal "INPUT_C2" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 56
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(57): signal "INPUT_C3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 57
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(57): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 57
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(58): signal "INPUT_C3" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 58
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(59): signal "INPUT_C4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 59
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(59): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 59
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(60): signal "INPUT_C4" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 60
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(61): signal "INPUT_C5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 61
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(61): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 61
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(62): signal "INPUT_C5" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 62
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(63): signal "INPUT_C6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 63
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(63): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 63
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(64): signal "INPUT_C6" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 64
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(65): signal "INPUT_C7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 65
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(65): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 65
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(66): signal "INPUT_C7" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 66
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(67): signal "INPUT_C8" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 67
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(67): signal "aux" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 67
+Warning (10492): VHDL Process Statement warning at filtroCartasAtivadas.vhd(68): signal "INPUT_C8" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 68
+Warning (10631): VHDL Process Statement warning at filtroCartasAtivadas.vhd(24): inferring latch(es) for signal or variable "x", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Warning (10631): VHDL Process Statement warning at filtroCartasAtivadas.vhd(24): inferring latch(es) for signal or variable "aux", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Warning (10631): VHDL Process Statement warning at filtroCartasAtivadas.vhd(24): inferring latch(es) for signal or variable "y", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "y[0]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "y[1]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "y[2]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "y[3]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "y[4]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "y[5]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "y[6]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "aux[0]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "aux[1]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "aux[2]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "aux[3]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "aux[4]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "aux[5]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "aux[6]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "x[0]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "x[1]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "x[2]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "x[3]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "x[4]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "x[5]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (10041): Inferred latch for "x[6]" at filtroCartasAtivadas.vhd(24) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/filtroCartasAtivadas.vhd Line: 24
+Info (12128): Elaborating entity "maquinaEstados" for hierarchy "maquinaEstados:maquinaEstadoss" File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 283
+Warning (10541): VHDL Signal Declaration warning at maquinaEstados.vhd(29): used implicit default value for signal "demuxEnable" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 29
+Warning (10541): VHDL Signal Declaration warning at maquinaEstados.vhd(40): used implicit default value for signal "counterEnable" because signal was never assigned a value or an explicit default value. Use of implicit default value may introduce unintended design optimizations. File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 40
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "next_state", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "keyboardEnable", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "enableCard_1", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "updateDisplayTwiCard_1", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "filterEnable", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "enableCard_2", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "updateDisplayTwiCard_2", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "enableCard_3", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "updateDisplayTwiCard_3", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "enableCard_4", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "updateDisplayTwiCard_4", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "enableCard_5", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "updateDisplayTwiCard_5", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "enableCard_6", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "updateDisplayTwiCard_6", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "enableCard_7", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "updateDisplayTwiCard_7", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "enableCard_8", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "updateDisplayTwiCard_8", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "compEnable", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (10631): VHDL Process Statement warning at maquinaEstados.vhd(61): inferring latch(es) for signal or variable "newCounterTwiCards", which holds its previous value in one or more paths through the process File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "newCounterTwiCards[0]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "newCounterTwiCards[1]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "newCounterTwiCards[2]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "compEnable" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "updateDisplayTwiCard_8" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_8[0]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_8[1]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_8[2]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "updateDisplayTwiCard_7" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_7[0]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_7[1]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_7[2]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "updateDisplayTwiCard_6" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_6[0]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_6[1]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_6[2]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "updateDisplayTwiCard_5" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_5[0]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_5[1]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_5[2]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "updateDisplayTwiCard_4" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_4[0]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_4[1]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_4[2]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "updateDisplayTwiCard_3" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_3[0]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_3[1]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_3[2]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "updateDisplayTwiCard_2" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_2[0]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_2[1]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_2[2]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "filterEnable" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "updateDisplayTwiCard_1" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_1[0]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_1[1]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "enableCard_1[2]" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "keyboardEnable" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "next_state.s7" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "next_state.s6" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "next_state.s5" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "next_state.s4" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "next_state.s3" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "next_state.s2" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "next_state.s1" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (10041): Inferred latch for "next_state.s0" at maquinaEstados.vhd(61) File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Info (13025): Duplicate LATCH primitives merged into single LATCH primitive
+    Info (13026): Duplicate LATCH primitive "maquinaEstados:maquinaEstadoss|enableCard_1[0]" merged with LATCH primitive "maquinaEstados:maquinaEstadoss|enableCard_1[1]" File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+    Info (13026): Duplicate LATCH primitive "maquinaEstados:maquinaEstadoss|enableCard_5[0]" merged with LATCH primitive "maquinaEstados:maquinaEstadoss|enableCard_5[1]" File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+Warning (13012): Latch maquinaEstados:maquinaEstadoss|enableCard_1[1] has unsafe behavior File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tecladoNumerico:teclado|registrador:Reg|q[0] File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/registrador.vhd Line: 18
+Warning (13012): Latch maquinaEstados:maquinaEstadoss|enableCard_2[0] has unsafe behavior File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tecladoNumerico:teclado|registrador:Reg|q[0] File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/registrador.vhd Line: 18
+Warning (13012): Latch maquinaEstados:maquinaEstadoss|enableCard_3[2] has unsafe behavior File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tecladoNumerico:teclado|registrador:Reg|q[0] File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/registrador.vhd Line: 18
+Warning (13012): Latch maquinaEstados:maquinaEstadoss|enableCard_4[2] has unsafe behavior File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tecladoNumerico:teclado|registrador:Reg|q[0] File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/registrador.vhd Line: 18
+Warning (13012): Latch maquinaEstados:maquinaEstadoss|enableCard_5[1] has unsafe behavior File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tecladoNumerico:teclado|registrador:Reg|q[0] File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/registrador.vhd Line: 18
+Warning (13012): Latch maquinaEstados:maquinaEstadoss|enableCard_6[0] has unsafe behavior File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tecladoNumerico:teclado|registrador:Reg|q[0] File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/registrador.vhd Line: 18
+Warning (13012): Latch maquinaEstados:maquinaEstadoss|enableCard_7[1] has unsafe behavior File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tecladoNumerico:teclado|registrador:Reg|q[0] File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/registrador.vhd Line: 18
+Warning (13012): Latch maquinaEstados:maquinaEstadoss|enableCard_8[1] has unsafe behavior File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/maquinaEstados.vhd Line: 61
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal tecladoNumerico:teclado|registrador:Reg|q[0] File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/registrador.vhd Line: 18
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "carta1[1]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 10
+    Warning (13410): Pin "carta2[0]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 11
+    Warning (13410): Pin "carta2[1]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 11
+    Warning (13410): Pin "carta2[2]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 11
+    Warning (13410): Pin "carta2[3]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 11
+    Warning (13410): Pin "carta2[6]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 11
+    Warning (13410): Pin "carta3[2]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 12
+    Warning (13410): Pin "carta3[3]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 12
+    Warning (13410): Pin "carta3[6]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 12
+    Warning (13410): Pin "carta4[2]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 13
+    Warning (13410): Pin "carta4[3]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 13
+    Warning (13410): Pin "carta4[6]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 13
+    Warning (13410): Pin "carta5[1]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 14
+    Warning (13410): Pin "carta6[0]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 15
+    Warning (13410): Pin "carta6[1]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 15
+    Warning (13410): Pin "carta6[2]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 15
+    Warning (13410): Pin "carta6[3]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 15
+    Warning (13410): Pin "carta6[6]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 15
+    Warning (13410): Pin "carta7[1]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 16
+    Warning (13410): Pin "carta7[4]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 16
+    Warning (13410): Pin "carta8[1]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 17
+    Warning (13410): Pin "carta8[4]" is stuck at GND File: C:/Users/USER/Documents/circuitosLogicos/memory-game/memory_game_implementation/memory_game.vhd Line: 17
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 16 registers lost all their fanouts during netlist optimizations.
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Info (21057): Implemented 114 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 5 input pins
+    Info (21059): Implemented 56 output pins
+    Info (21061): Implemented 53 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 122 warnings
+    Info: Peak virtual memory: 4887 megabytes
+    Info: Processing ended: Wed Dec  6 09:32:09 2023
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:15
 
 
