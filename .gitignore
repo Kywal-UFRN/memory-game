@@ -1,1 +1,3 @@
 *.rdr.flock
+memory_game_implementation/db/memory_game.map_bb.hdb
+memory_game_implementation/db/memory_game.tis_db_list.ddb 
