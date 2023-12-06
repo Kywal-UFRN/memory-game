@@ -24,7 +24,7 @@
     <state>
       <values></values>
       <position x="600.0" y="780.0"/>
-      <number>2</number>
+      <number>6</number>
       <name>fim de jogo</name>
       <radius>100</radius>
       <isInitial>false</isInitial>
@@ -64,7 +64,7 @@
     <state>
       <values></values>
       <position x="1020.0" y="360.0"/>
-      <number>6</number>
+      <number>2</number>
       <name>segunda entrada</name>
       <radius>110</radius>
       <isInitial>false</isInitial>
@@ -82,7 +82,7 @@
     </transition>
     <transition>
       <values></values>
-      <position x="355.73175" y="644.8432"/>
+      <position x="345.96844" y="633.4556"/>
       <fromState reference="../../../states/state"/>
       <toState reference="../../../states/state[3]"/>
       <condition></condition>
@@ -110,21 +110,21 @@
     </transition>
     <transition>
       <values></values>
-      <position x="430.02478" y="130.03964"/>
+      <position x="430.02478" y="130.03963"/>
       <fromState reference="../../../states/state[6]"/>
       <toState reference="../../../states/state"/>
       <condition></condition>
     </transition>
     <transition>
       <values></values>
-      <position x="845.0" y="328.72556"/>
+      <position x="840.0" y="328.7265"/>
       <fromState reference="../../../states/state[2]"/>
       <toState reference="../../../states/state[7]"/>
       <condition></condition>
     </transition>
     <transition>
       <values></values>
-      <position x="1236.2806" y="267.8987"/>
+      <position x="1226.3815" y="269.31485"/>
       <fromState reference="../../../states/state[7]"/>
       <toState reference="../../../states/state[4]"/>
       <condition></condition>

@@ -14,7 +14,7 @@ ENTITY memory_game IS
 		carta5 : out STD_LOGIC_VECTOR(6 downto 0);
 		carta6 : out STD_LOGIC_VECTOR(6 downto 0);
 		carta7 : out STD_LOGIC_VECTOR(6 downto 0);
-		carta8 : out STD_LOGIC_VECTOR(6 downto 0);
+		carta8 : out STD_LOGIC_VECTOR(6 downto 0)
 	);
 END memory_game;
 
@@ -69,6 +69,46 @@ ARCHITECTURE arch_2 OF memory_game IS
 			V_CARTA : out STD_LOGIC_VECTOR(6 downto 0)
 		);
 	  end component;
+	  
+	 component maquinaEstados is
+		port(
+				stateCard_1: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+				stateCard_2: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+				stateCard_3: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+				stateCard_4: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+				stateCard_5: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+				stateCard_6: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+				stateCard_7: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+				stateCard_8: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+				numericKey: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+				isEqual: IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+				cntTwistedCards : IN STD_LOGIC_VECTOR (2 DOWNTO 0);
+				clk : IN BIT;
+				clear : IN BIT;
+				enableCard_1: OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
+				enableCard_2: OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
+				enableCard_3: OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
+				enableCard_4: OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
+				enableCard_5: OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
+				enableCard_6: OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
+				enableCard_7: OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
+				enableCard_8: OUT STD_LOGIC_VECTOR (1 DOWNTO 0);
+				demuxEnable: OUT BIT;
+				updateDisplayTwiCard_1 : OUT BIT;
+				updateDisplayTwiCard_2 : OUT BIT;
+				updateDisplayTwiCard_3 : OUT BIT;
+				updateDisplayTwiCard_4 : OUT BIT;
+				updateDisplayTwiCard_5 : OUT BIT;
+				updateDisplayTwiCard_6 : OUT BIT;
+				updateDisplayTwiCard_7 : OUT BIT;
+				updateDisplayTwiCard_8 : OUT BIT;
+				keyboardEnable : OUT BIT;
+				filterEnable : OUT BIT;
+				counterEnable: OUT BIT;
+				compEnable: OUT BIT;
+				newCounterTwiCards : OUT STD_LOGIC_VECTOR (2 DOWNTO 0)
+		);
+	 end component;
 	 
 BEGIN
 		d_carta1 : carta 
@@ -168,6 +208,44 @@ BEGIN
             ena => 
             q : 
        );
-
+		 
+		maquinaEstados : maquinaEstados
+		port map(
+			stateCard_1 => 
+			stateCard_2 =>
+			stateCard_3 =>
+			stateCard_4 =>
+			stateCard_5 =>
+			stateCard_6 =>
+			stateCard_7 =>
+			stateCard_8 =>
+			numericKey =>
+			isEqual =>
+			cntTwistedCards =>
+			clk =>
+			clear =>
+			enableCard_1 =>
+			enableCard_2 =>
+			enableCard_3 =>
+			enableCard_4 =>
+			enableCard_5 =>
+			enableCard_6 =>
+			enableCard_7 =>
+			enableCard_8 =>
+			demuxEnable =>
+			updateDisplayTwiCard_1 =>
+			updateDisplayTwiCard_2 =>
+			updateDisplayTwiCard_3 =>
+			updateDisplayTwiCard_4 =>
+			updateDisplayTwiCard_5 =>
+			updateDisplayTwiCard_6 =>
+			updateDisplayTwiCard_7 =>
+			updateDisplayTwiCard_8 =>
+			keyboardEnable =>
+			filterEnable =>
+			counterEnable => 
+			compEnable =>
+			newCounterTwiCards => 
+		);
 
 END arch_2;

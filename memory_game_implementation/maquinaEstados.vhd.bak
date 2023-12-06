@@ -1,0 +1,14 @@
+ENTITY fsm_go_back IS
+ PORT (clk : IN BIT; -- clock
+ clrn: IN BIT; -- clear
+ go : IN BIT; -- input 1
+ back: IN BIT; -- input 2
+ q : OUT BIT); -- output
+END fsm_go_back;
+ARCHITECTURE arch_1 OF fsm_go_back IS
+ TYPE state_type IS (s0, s1);
+ SIGNAL state_reg : state_type;
+ SIGNAL next_state: state_type;
+BEGIN
+-- next slides
+END arch_1;
